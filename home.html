@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="Rushal Bangar" name="author">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to Matoshri College of Engineering & Research Centre (MCOERC), an autonomous institute in Nashik dedicated to technical excellence and innovation.">
+	<meta name="keywords" content="Engineering College, Engineering Institute,  Matoshri Engineering College, Matoshri Education Society, Matoshri Engineering College, Nashik,
+		  Best Engineering College in Nashik, Best Engineering College in Maharashtra, Savitribai Phule Pune University, Engineering, Technical Courses, Computer Engineering, Campus,
+		 Best Campus, Best College, Best Engineering College, Best Engineering Institute, Mechanical Engineering, Civil Engineering, Electrical Engineering,
+		 Electronics and Telecommunication Engineering, Artificial Intelligence and Data Science, Eklahare, Odha, Nashik, Maharashtra, University, AICTE, DTE, Best Placement">
+
+	<!-- SITE TITLE -->
+	<title>MCOERC - Leading Engineering College in Nashik</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<!-- Animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Latest Bootstrap min CSS -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+
+	<link href="assets/css/datatables.min.css" rel="stylesheet">
+
+
+	<link href="assets/libs/bootstrap-treeview-1.2.0/dist/bootstrap-treeview.min.css"
+		  rel="stylesheet">
+	<!-- Google Font
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		  rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+		  rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+-->
+
+	<!-- Icon Font -->
+	<link href="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.css" rel="stylesheet">
+	<!-- Icon Font CSS -->
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!--- owl carousel CSS-->
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css?2">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" id="layoutstyle" href="assets/color/theme.css">
+
+	<!-- catchaAPI google -->
+	<script defer src='https://www.google.com/recaptcha/api.js'></script>
+
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Glassmorphism CSS -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+<!-- Floating Action Button -->
+<div class="glass-fab" onclick="handleFabClick()" data-aos="zoom-in" data-aos-delay="1000"><i class="fa fa-plus"></i></div>
+
+<!-- START HEADER -->
+<header class="header_wrap dark_skin hover_menu_style2">
+	<a href="#" class="speaker"><i class="fa fa-volume-up"></i></a>
+	<div class="top-header-bar">
+		<ul class="list_none d-flex flex-wrap justify-content-end">
+			<li><a href="javascript:void(0);" id="usefulLinks">Useful Links</a></li>
+			<li><a href="library.html">Library</a></li>
+			<li><a href="javascript:void(0);" onclick="showAdmissionEnquiryModal(event);">Admission Enquiry</a></li>
+			<li><a href="feedback.html" target="_self">Feedback</a></li>
+			<li><a href="https://admissions.matoshri.edu.in/" target="_blank">Online Admission</a></li>
+			<li><a href="https://learning.matoshri.edu.in/" target="_blank">Matoshri Knowledge Base</a></li>
+			<li><a href="assets/apk/mcoerc_test.apk" target="_blank">Matoshri Test App</a></li>
+		</ul>
+	</div>
+
+	<div class="top-header light_skin d-md-block">
+		<div class="container">
+			<div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+				<div class="mr-md-3">
+					<img class="logo_dark rounded" src="assets/images/logo/mcoerc.png" width="70px"
+						 height="70px" alt="logo"/>
+				</div>
+				<div>
+					<p class="text-center m-0">Matoshri Education Society's</p>
+					<h3 class="text-center m-0 font-weight-bolder pb-1 header-title">Matoshri College of Engineering &
+						Research
+						Centre, Eklahare,
+						Nashik</h3>
+					<h4 class="text-center m-0 my-1 font-weight-bold py-1 header-title text-white"
+						style="background: #376996;">An Autonomous Institute</h4>
+					<p class="text-center m-0">Approved by All India Council for Technical Education, New
+						Delhi Affiliated to Savitribai Phule Pune University, College Code:5177</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand heading_s3 m-0" href="">
+				<h1 class="text_default d-none" style="text-shadow: 3px 5px 5px rgba(0,0,0,0.4);">MCOERC</h1>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+					class="ion-android-menu"></span></button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li>
+						<a class="nav-link active" href="home.html">Home</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">About</a>
+						<div class="dropdown-menu">
+							<ul>
+								<li>
+									<a class="dropdown-item nav-link nav_item" href="about.html">About
+										Institute</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="vision.html">Vision & Mission</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="secretary.html">Secretary's Desk</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="principal.html">Director's Desk</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="dean.html">Dean Academic's Desk</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="coe.html">CoE's Desk</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="https://matoshri.edu.in/" target="-_blank">Matoshri Education Society</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="gb.html">Governing Body</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="council.html">Academic Council</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="bos.html">Board of Studies
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="finance.html">Finance Committee
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="exam.html">Examination Cell</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav-item"
+									   href="grievance.html">Grievance
+										Redressal</a>
+
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav-item"
+									   href="governance.html">Governance</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav-item"
+									   href="aicte-ugc-permissions/ugc.html">AICTE & UGC
+										Permissions</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav-item"
+									   href="affiliation.html">University
+										Affiliation</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class=" dropdown dropdown-mega-menu">
+						<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Academics</a>
+						<div class="dropdown-menu">
+							<ul class="mega-menu d-lg-flex">
+								<li class="mega-menu-col col-lg-4">
+									<ul>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/computer.html">Computer Engineering</a>
+										</li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/it.html">Information
+												Technology</a></li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/electronics.html">Electronics &
+												Telecommunication
+												Engineering</a></li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/science.html">Engineering Sciences</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mega-menu-col col-lg-4">
+									<ul>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/mechanical.html">Mechanical
+												Engineering</a></li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/civil.html">Civil
+												Engineering</a></li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/electrical.html">Electrical
+												Engineering</a>
+										</li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="library.html">Library</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mega-menu-col col-lg-4">
+									<ul>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/aids.html">Artificial Intelligence &
+												Data Science </a></li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/mca.html">Master of Computer
+												Applications</a>
+										</li>
+										<li><a class="dropdown-item nav-link nav_item"
+											   href="academics/electronics.html">Electronics and Computer
+												Engineering</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Admissions</a>
+						<div class="dropdown-menu">
+							<ul>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="admissions/fe.html">First Year Under Graduate
+										(B.Tech)</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="admissions/dsy.html">Direct Second Year Engineering -
+										UG</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="admissions/me.html">M.Tech, MCA Post Graduate</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="admissions/phd.html">Ph.D</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item" target="_blank"
+									   href="assets/pdf/admissions/mcoerc_admission_brochure_2023-24.pdf">Admission
+										Brochure</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="admissions/faq.html">FAQs</a>
+								</li>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="https://admissions.matoshri.edu.in/" target="_blank">Online Admission</a>
+								</li>
+
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a class="nav-link" href="admin.html"> Administration </a>
+					</li>
+					<li>
+						<a class="nav-link" href="tpo.html">Training & Placement </a>
+					</li>
+
+					<li>
+						<a class="nav-link" href="alumni.html"> Alumni </a>
+					</li>
+					<li>
+						<a class="nav-link" href="facilities/bus.html"> Facilities </a>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">News & Events</a>
+						<div class="dropdown-menu">
+							<ul>
+								<li>
+									<a class="dropdown-item nav-link nav_item"
+									   href="https://engg.matoshri.edu.in/news-events/news-letters/jan-march-2024">News Letters
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a class="nav-link" href="contact.html"> Contact Us </a>
+					</li>
+
+					</li>
+				</ul>
+			</div>
+			<!--ul class="navbar-nav attr-nav align-items-center">
+				<li class="dropdown"><a class=" nav-link" href="#" data-toggle="dropdown"><i
+								class="ti-announcement"></i></a>
+					<div class="cart_box dropdown-menu dropdown-menu-right">
+						<ul class="cart_list">
+							<li>
+								<a href="">Announcement 1</a>
+							</li>
+							<li>
+								<a href="">Announcement 2</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul-->
+		</nav>
+	</div>
+	</header>
+<!-- END HEADER -->
+
+<div class="modal fade" id="admission-enquiry-popup" tabindex="-1" role="dialog"
+	 aria-labelledby="modalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content border-0 radius_none">
+			<div class="modal-body">
+				<div class="newsletter-pop-up">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="ion-close-round"></i></span>
+					</button>
+					<div class="row justify-content-center">
+						<div class="col-md-12">
+							<div class="popup-form text-center">
+								<div class="popup-text">
+									<div class="heading_s3">
+										<h3>Admission Enquiry</h3>
+									</div>
+								</div>
+								<div class="field_form form_style4">
+									<form class="subscribe-form" method="post"
+										  action="https://engg.matoshri.edu.in/admissions/enquiry">
+										<div class="form-group">
+											<input required placeholder="Name" class="form-control" name="studentName" id="studentName" autocomplete="name" type="text">
+											<label for="studentName">Name</label>
+										</div>
+										<div class="form-group">
+											<input required placeholder="Mobile" class="form-control" name="mobile" id="mobile" autocomplete="tel" type="tel">
+											<label for="mobile">Mobile</label>
+										</div>
+										<div class="form-group">
+											<input required placeholder="Email" class="form-control" name="email" id="email" autocomplete="email" type="email">
+											<label for="email">Email</label>
+										</div>
+										<div class="form-group">
+											<label for="admissionFor">Admission For</label>
+											<div class="custom_select">
+											<select name="admissionFor" id="admissionFor"
+														class="form-control not_chosen" required>
+													<option value>Admission For</option>
+													<option value="First Year Engineering">FY B. Tech.
+													</option>
+													<option value="Direct Second Year Engineering">Direct Second Year B. Tech.
+													</option>
+													<option value="M.E.">M. Tech.</option>
+													<option value="M.E.">MCA</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="branch">Interested Branch</label>
+											<div class="custom_select">
+											<select class="form-control not_chosen" name="branch" id="branch" required>
+													<option value>Select Branch</option>
+													<option value="Computer Engineering">Computer Engineering</option>
+													<option value="Mechanical Engineering">Mechanical Engineering
+													</option>
+													<option value="Electronics & Telecommunication Engineering">
+														Electronics & Telecommunication Engineering
+													</option>
+													<option value="Electrical Engineering">Electrical Engineering
+													</option>
+													<option value="Information Technology">Information Technology
+													</option>
+													<option value="Civil Engineering">Civil Engineering</option>
+													<option value="Artificial Intelligence &
+														Data Science">Artificial Intelligence &
+														Data Science
+													</option>
+													<option value="Electronics and Computer Engineering">Electronics and Computer Engineering</option>
+													<option value="Master of Computer Applications">Master of Computer Applications</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<textarea placeholder="Your Message" class="form-control"
+													  name="queryMessage" id="queryMessage" rows="4"></textarea>
+											<label for="queryMessage">Your Message</label>
+										</div>
+										<div class="form-group">
+											<input type="submit" value="Submit" class="btn btn-default">
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- START SECTION BANNER -->
+<section class="banner_section p-0 full_screen" data-aos="fade-up">
+	<div id="carouselMain" class="banner_content_wrap carousel slide light_arrow3 arrow_style1"
+		 data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active background_bg overlay_bg" data-img-src="assets/images/slider/1.jpeg">
+				<div class="banner_slide_content">
+					<div class="container"><!-- STRART CONTAINER -->
+						<div class="row">
+							<div class="col-xl-7 col-lg-8 col-sm-12">
+								<div class="banner_content <!--content_overlay_bg animation text_white-->"
+									 data-animation="fadeIn" data-animation-delay="0.8s">
+									<span class="animation text-uppercase text-center red p-2 d-inline-block" data-animation="fadeInLeft"
+										data-animation-delay="1s">
+										<h4 class="d-inline">Autonomous Institute From AY 2024-25 </h4> <h6 class="d-inline">ACCREDITED BY NBA & NAAC</h6> </span>
+									<!--h3 class="animation my-4" data-animation="fadeInLeft" data-animation-delay="1.5s">
+										Admissions are Open for the Academic Year 2025–26, for B.Tech. , M.Tech. & MCA</h3!-->
+
+									<!--a class="btn btn-pink animation" href="javascript:void(0);"
+									   onclick="showAdmissionEnquiryModal(event);" data-animation="fadeInLeft"
+									   data-animation-delay="1.8s">Admission Enquiry</a-->
+								</div>
+							</div>
+						</div>
+					</div><!-- END CONTAINER-->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END SECTION BANNER -->
+
+<!-- START SECTION BANNER -->
+<section class="p-0" data-aos="fade-up">
+	<div class="container-fluid no-padding"	>
+		<div class="row no-gutters">
+			<div class="col-md-3 col-sm-6 text-center animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+				<div class="icon_box icon_box_style_7 bg-dark text_white h-100">
+					<div class="box_icon mb-3">
+						<i class="fa fa-thumbs-up etline-icon icon-medium mb-2 mt-2"></i>
+					</div>
+					<div class="icon_box_content">
+						<h5>Best Academics</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+				<div class="icon_box icon_box_style_7 bg_primary text_white h-100">
+					<div class="box_icon mb-3">
+						<i class="fa fa-medal etline-icon icon-medium mb-2 mt-2"></i>
+					</div>
+					<div class="icon_box_content">
+						<h5>NBA & NAAC Accredited</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+				<div class="icon_box icon_box_style_7 bg_steel_teal text_white h-100">
+					<div class="box_icon mb-3">
+						<i class="fa fa-chalkboard-teacher etline-icon icon-medium mb-2 mt-2"></i>
+					</div>
+					<div class="icon_box_content">
+						<h5>Excellent Faculty</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+				<div class="icon_box icon_box_style_7 bg-dark text_white h-100">
+					<div class="box_icon mb-3">
+						<i class="fa fa-hands-helping etline-icon icon-medium mb-2 mt-2"></i>
+					</div>
+					<div class="icon_box_content">
+						<h5>Placement Assistance</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END SECTION BANNER -->
+
+<div class="page-content">
+	<!-- START SECTION ABOUT US -->
+	<section class="overflow_hide padding_four_tb" data-aos="fade-up">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 col-sm-6 animation" data-animation="fadeInRight" data-animation-delay="0.2s">
+					<div class="heading_s3 mb-md-3">
+						<span>Welcome To</span>
+						<h3>Matoshri College of Engineering & Research Centre, Eklahare, Nashik</h3>
+					</div>
+					<p class="text-justify">Matoshri College of Engineering & Research Centre was established in the
+						year
+						2008 in rural area at Eklahare near Odhagaon under the Matoshri Education Society, Yeola. The
+						core
+						objective of the institute is to provide the quality technical education for the masses to
+						uplift
+						the living standard of the society. Institute offers four year degree courses in Computer
+						Engineering, Electronics and Telecommunication Engineering, Information Technology, Mechanical
+						Engineering, Civil Engineering, Electrical Engineering, and Artificial Intelligence and Data
+						Science. The institute runs the two year PG programmes in Computer Engineering, Electronics and
+						Telecommunication Engineering, Mechanical Engineering, Civil Engineering, and Electrical
+						Engineering
+						to promote the research culture. To imbibe the research culture among the students and faculty,
+						institute has established the research centers in Computer Engineering, Electronics and
+						Telecommunication Engineering and Mechanical Engineering. These programmes are approved by All India Council of Technical
+						Education (AICTE) and affiliated to Savitribai Phule Pune University, Pune. It has recognition
+						of
+						2(F)/12(B) from University Grant Commission (UGC).</p>
+
+					<a href="about.html" class="text-capitalize">Read More<i
+								class="ti-angle-double-right align-middle"></i></a>
+				</div>
+				<div class="col-md-6 col-sm-12 animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+					<div class="heading_s4 mb-2 bg_primary heading_bg">
+						<h3 class="text-white">Vision</h3>
+					</div>
+					<p class="pb-2 description ml-3">To Establish Omnipotent Learning Centre Meeting the Standards to
+						Evolve as a
+						Lighthouse
+						for the
+						Society.</p>
+
+					<div class="heading_s4 bg_primary heading_bg mb-2">
+						<h3 class="text-white">Mission</h3>
+					</div>
+					<div class="list_style_2">
+						<ul class="text-black">
+							<li>Setting up state-of-the-art infrastructure.</li>
+							<li>Instilling strong ethical practices and values.</li>
+							<li>Empowering through quality technical education.</li>
+							<li>Tuning the faculty to modern technology and establishing strong liaison with industry.
+							</li>
+							<li>Developing the institute as prominent center for Research and Development.</li>
+							<li>Establishing the institute to serve a Lighthouse for the society.</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- END SECTION ABOUT US -->
+
+	<section class="overlay_bg_60 padding_four_tb background_bg fixed_bg"
+			 data-img-src="assets/images/about/about1.jpg" data-aos="fade-up">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 col-sm-12 animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+					<div class="heading_s4S heading_bg1" style="box-shadow: 5px 4px 5px rgba(0,0,0,0.4);">
+						<h3 class="text-white">Notices</h3>
+					</div>
+					<div class="overlay_bg_white_80"
+						 style="box-shadow: 5px 4px 5px rgba(0,0,0,0.4);">
+						<div id="noticeCarousel" class="carousel vert slide" data-ride="carousel" data-dots="false"
+							 data-interval="4000" data-nav="false">
+							<div class="carousel-inner">
+																	<div class="carousel-item active p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>Backlog and Imorovement Syllabus Guidelines</h4>
+											</div>
+											<p>Notice regarding syllabus guidelines for backlog and improvement examination to be held in December 2020.</p>
+
+										</div>
+
+										<a href="assets/notices/exam419_26112020[1].pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																		<div class="carousel-item  p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>SPPU practical/oral/project/seminar exam for first semester academic year 2020-21  </h4>
+											</div>
+											<p>SPPU has postponed all  practical/oral/project/seminar exam for first semester academic year 2020-21 to second semester.</p>
+
+										</div>
+
+										<a href="assets/notices/443_22.122020.pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																		<div class="carousel-item  p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>Regarding class Improvement Examination
+</h4>
+											</div>
+											<p>Timetable For Class Improvement Online Examination of APR/MAY 2020 </p>
+
+										</div>
+
+										<a href="assets/notices/Circular No. 2 Class Improvement Examination (Engineering)_10.012021 (1).pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																		<div class="carousel-item  p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>Rules and Regulations for Honors and Minors</h4>
+											</div>
+											<p>SPPU Rules and Regulations for Honors and Minors Under the Faculty of Science and Technology Effective from July 2020 for academic year 2020-21</p>
+
+										</div>
+
+										<a href="assets/notices/Rules_and_Regulations-Honours_and_Minors_for_the_A_Y_2020-21_16_02_2021.pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																		<div class="carousel-item  p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>National Digital Library</h4>
+											</div>
+											<p>We are happy to inform all the faculty staff and students, that Engineering Library is now a registered
+memberof@(NDL)aninitiativeofMHRD,Govt.ofIndia.</p>
+
+										</div>
+
+										<a href="assets/notices/NDL notice 1.pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																		<div class="carousel-item  p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>Examination Notification - 2021</h4>
+											</div>
+											<p>Examination Notification - 2021</p>
+
+										</div>
+
+										<a href="assets/notices/College exam notice.pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																		<div class="carousel-item  p-4">
+
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>DELNET Notice</h4>
+											</div>
+											<p>DEL NET Notice</p>
+
+										</div>
+
+										<a href="assets/notices/Delnet_Notice_25_jjan_2022.pdf"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+																</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+					<div class="heading_s4S heading_bg1" style="box-shadow: 5px 4px 5px rgba(0,0,0,0.4);">
+						<h3 class="text-white">Notices</h3>
+					</div>
+					<div class="overlay_bg_white_80"
+						 style="box-shadow: 5px 4px 5px rgba(0,0,0,0.4);">
+						<div id="noticeCarousel" class="carousel vert slide" data-ride="carousel" data-dots="false"
+							 data-interval="4000" data-nav="false">
+							<div class="carousel-inner">
+								<div class="carousel-item active p-4">
+										<div style="height: 200px; max-height: 200px;">
+											<div class="heading_s7">
+												<h4>Scholarship Notice</h4>
+											</div>
+											<p>Scholarship Notice 2021-22</p>
+										</div>
+										<a href="assets/notices/sholarship.jpg"
+										   target="_blank"
+										   class="float-right notice-doc-link"><i class="ion-android-send"></i> View
+											Document</a>
+									</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section padding_four_tb" data-aos="fade-up">
+		<div class="container">
+			<div class="heading_s3">
+				<h4>Academics</h4>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/computer.html">
+							<div class="box_icon mb-3">
+								<i class="ti-desktop"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>Computer <br />Engineering</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/mechanical.html">
+							<div class="box_icon mb-3">
+								<i class="ti-settings"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>Mechanical <br>Engineering</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/electrical.html">
+							<div class="box_icon mb-3">
+								<i class="ti-light-bulb"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>Electrical <br> Engineering</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/electronics.html">
+							<div class="box_icon mb-3">
+								<i class="ti-mobile"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>E&TC <br> Engineering</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/it.html">
+							<div class="box_icon mb-3">
+								<i class="ti-world"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>Information <br> Technology</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/civil.html">
+							<div class="box_icon mb-3">
+								<i class="ti-home"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>Civil <br> Engineering</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="">
+							<div class="box_icon mb-3">
+								<i class="ti-dribbble"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>AI & <br> Data Science</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-4 text-center">
+					<div class="icon_box icon_box_style_10">
+						<a href="academics/science.html">
+							<div class="box_icon mb-3">
+								<i class="ti-search"></i>
+							</div>
+							<div class="icon_box_content">
+								<h5>Engineering <br> Sciences</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--div class="row yit-feature style-1 text-center">
+			<div class="col-sm-2">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #E07F00;"><i
+								class="icon icon-display icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Computer Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/computer.html"
+									   class="btn btn-sm btn-teal-border rounded-0">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-sm-2">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content brown-color-bg"><i
+								class="ti-settings themify-icon icon-medium mb-20"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Mechanical Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/mechanical.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #2274A5;"><i
+								class="icon icon-power etline-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Electrical Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/electrical.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="yit-feature-item text-white">
+					<div class="yit-feature-content" style="background-color: #9A275A;"><i
+								class="ti-mobile etline-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">E&TC Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/electronics.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #56203D"><i
+								class="ti-window themify-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Information Technology</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/it.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #485665;"><i
+								class="icon icon-road themify-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Civil Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/civil.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #1D7874;"><i
+								class="fa fa-brain themify-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">AI & Data Science Engg.</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div-->
+		</div>
+	</section>
+
+	<!--div class="section padding_four_tb">
+	<div class="container mb-3">
+		<div class="heading_s3">
+			<h4>Academics</h4>
+		</div>
+		<div class="yit-feature style-40 text-center mt-40 carousel_slide3 owl-carousel owl-theme "
+			 data-margin="10" data-center="true" data-loop="true" data-dots="false" data-autoplay="true">
+			<div class="item">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #E07F00;"><i
+								class="icon icon-display icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Computer Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/computer.html"
+									   class="btn btn-sm btn-teal-border rounded-0">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="item">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content brown-color-bg"><i
+								class="ti-settings themify-icon icon-medium mb-20"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Mechanical Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/mechanical.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #2274A5;"><i
+								class="icon icon-power etline-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Electrical Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/electrical.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="yit-feature-item text-white">
+					<div class="yit-feature-content" style="background-color: #9A275A;"><i
+								class="ti-mobile etline-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">E&TC Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/electronics.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #56203D"><i
+								class="ti-window themify-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Information Technology</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/it.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #485665;"><i
+								class="icon icon-road themify-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">Civil Engineering</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="academics/civil.html"
+									   class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="yit-feature-item">
+					<div class="yit-feature-content" style="background-color: #1D7874;"><i
+								class="fa fa-brain themify-icon icon-medium mb-20 text-white"></i>
+						<h6 class="mb-10 font-xxsmall text-white">AI & Data Science Engg.</h6>
+						<hr class="width-20 height-1 white-color-bg">
+					</div>
+					<div class="yit-feature-hover white-color-bg">
+						<div class="yit-display-centrize">
+							<div class="yit-display-v-centrize">
+								<div class="btn-group-vertical">
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Visit</a>
+									<a href="" class="btn btn-sm btn-teal-border rounded-0 full-width">Admission
+										Enquiry</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+</div>
+</div-->
+
+	<!-- START SECTION TESTIMONIAL -->
+	<section class="bg-dark background_bg overlay_bg_60 fixed_bg bg_size_auto"
+			 data-img-src="assets/images/slider/1.jpeg" data-aos="fade-up">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="heading_s3 text-center">
+						<h2 class="text-white">What Students say about us:</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+
+					<div class="tab-style10 tab_white mb-3 text-center">
+						<ul class="nav nav-tabs" role="tablist">
+							<!--						<li class="nav-item">-->
+							<!--							<a class="nav-link active" id="home-tab10" data-toggle="tab" href="#student-testi-tab"-->
+							<!--							   role="tab" aria-controls="home10" aria-selected="true">Students</a>-->
+							<!--						</li>-->
+							<!--						<li class="nav-item">-->
+							<!--							<a class="nav-link" id="profile-tab10" data-toggle="tab" href="#parent-testi-tab"-->
+							<!--							   role="tab" aria-controls="profile10" aria-selected="false">Parents</a>-->
+							<!--						</li>-->
+						</ul>
+					</div>
+					<div class="tab-content text_white">
+						<div class="tab-pane fade show active" id="student-testi-tab" role="tabpanel"
+							 aria-labelledby="student-testi-tab">
+
+							<div class="testimonial_slider testimonial_style3 text_white carousel_slide3 owl-carousel owl-theme yellow-tab"
+								 data-margin="10" data-center="true" data-loop="true" data-autoplay="true">
+								<div class="item">
+									<div class="testimonial_box">
+										<div class="testi_meta">
+											<!--												<div class="quote">
+																								<img src="assets/images/quote.png" alt="quote">
+																							</div>-->
+											<p><i class="fa fa-quote-left"></i>&nbsp;My graduation and post graduation
+												at Matoshri College of Engineering has
+												been a very interesting and great journey. Choosing MCOE was one of the
+												best decisions. MCOE is a place of knowledge and bliss. It has provided
+												me with a wonderful environment and opportunity to learn and grow myself
+												in every field .<i class="fa fa-quote-right"></i></p>
+										</div>
+										<div class="testimonial_cl_info">
+
+											<div class="client_info">
+												<h6 class="font-weight-bold">Aboli Patil</h6>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimonial_box">
+										<div class="testi_meta">
+											<!--	<div class="quote">
+													<img src="assets/images/quote.png" alt="quote">
+												</div>-->
+											<p><i class="fa fa-quote-left"></i>&nbsp;It would be difficult to sum up
+												four years of MCOERC in just a few lines.
+												When I look back 8-10 years ago it makes me feel Proud. Proud of
+												everything which I am today. I am working in a reputed company,also
+												performing well up to the standards of Industry and that’s all possible
+												due to the holistic education system of my college. <i
+														class="fa fa-quote-right"></i></p>
+										</div>
+										<div class="testimonial_cl_info">
+
+											<div class="client_info">
+												<h6 class="font-weight-bold">Krishna Auti</h6>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimonial_box">
+										<div class="testi_meta">
+
+											<p><i class="fa fa-quote-left"></i>&nbsp;There are
+												highly experienced professors in the IT department. Best in
+												academics.
+												College provides best support for placement. Extra curricular
+												activities
+												like personality development, public speech training which was held
+												in
+												college are very useful for professional life as well as personal
+												life.<i class="fa fa-quote-right"></i></p>
+										</div>
+										<div class="testimonial_cl_info">
+											<div class="client_info">
+												<h6 class="font-weight-bold">Mohini Shirsath</h6>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimonial_box">
+										<div class="testi_meta">
+
+											<p><i class="fa fa-quote-left"></i>&nbsp;I personally believe that
+												though the college is strict enough it mainly focused on the development
+												and career of the students which is very important according to future
+												aspects. From the principal, HOD to staff all are expertise in their
+												own subject. The professional guidance from the staff is provided time
+												to time when needed.<i class="fa fa-quote-right"></i></p>
+										</div>
+										<div class="testimonial_cl_info">
+
+											<div class="client_info">
+												<h6 class="font-weight-bold">Pratiksha Shirude</h6>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimonial_box">
+										<div class="testi_meta">
+
+											<p><i class="fa fa-quote-left"></i>&nbsp;I want to convey my warm
+												regards and been thankful to my college for guiding me to become a
+												successful engineer.The relation between faculty and student is very
+												cordial andthey all have in-depth knowledge about their subjects which
+												made my concepts strong & helped me in cracking various exams.<i
+														class="fa fa-quote-right"></i></p>
+										</div>
+										<div class="testimonial_cl_info">
+
+											<div class="client_info">
+												<h6 class="font-weight-bold">Ashish Sahane</h6>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="tab-pane fade" id="parent-testi-tab" role="tabpanel"
+							 aria-labelledby="parent-testi-tab">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END SECTION TESTIMONIAL -->
+
+	<!-- START SECTION CLIENT LOGO -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+					<div class="heading_s3 text-center">
+						<h2>Our Recruiters</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 animation" data-animation="fadeInDown" data-animation-delay="0.1s">
+					<div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true"
+						 data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\amazon.jpg"
+											 alt="cl_logo1" title="Amazon"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\arress2.jpg" title="Arress"
+											 alt="cl_logo1"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Ashoka Buildcon.jpg"
+											 title="Ashoka Buildcon"
+											 alt="Ashoka Buildcon"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Bharat Wire.jpg"
+											 title="Bharat Wire Ropes"
+											 alt="Bharat Wire Ropes"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Bosch.jpg" title="Bosch"
+											 alt="Bosch"/></a>
+						</div>
+
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Byjus.jpg" title="Byjus"
+											 alt="Byjus"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Capgemini,Mumbai.jpg"
+											 title="Capgemini, Mumbai"
+											 alt="Capgemini, Mumbai"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Cms  I.T.jpg" title="CMS IT"
+											 alt="CMS IT"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Datamatics.jpg" title="Datamatics"
+											 alt="Datamatics"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\E Bridge Technologies,Pune.jpg"
+											 title="E Bridge Technologies,Pune"
+											 alt="E Bridge Technologies,Pune"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Epcos.jpg" title="Epcos"
+											 alt="Epcos"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Epic Research.jpg" title="Epic Research"
+											 alt="Epic Research"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\esds.jpg" title="ESDS"
+											 alt="ESDS"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Eternous Solution.jpg"
+											 title="Eternous Solution"
+											 alt="Eternous Solution"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Expert Global Solution.jpg"
+											 title="Expert Global Solution"
+											 alt="Expert Global Solution"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\infosys.jpg" title="Infosys"
+											 alt="Infosys"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Kpit.jpg" title="KPIT"
+											 alt="KPIT"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Mahindra And Mahindra.jpg"
+											 title="Mahindra"
+											 alt="Mahindra"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Mechatronics, Aurangabad.jpg"
+											 title="Mechatronics, Aurangabad"
+											 alt="Mechatronics, Aurangabad"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Mylan Lab Nasik.jpg"
+											 title="Mylan Lab Nasik"
+											 alt="Mylan Lab Nasik"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Netwin Infosolutions.jpg"
+											 title="Netwin Infosolutions"
+											 alt="Netwin Infosolutions"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\paramatrix.jpg" title="paramatrix"
+											 alt="paramatrix"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Perennial Software, Pune.jpg"
+											 title="Perennial Software, Pune"
+											 alt="Perennial Software, Pune"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Puja Industries Pvt. Ltd, Nashik.jpg"
+											 title="Puja Industries Pvt. Ltd, Nashik"
+											 alt="Puja Industries Pvt. Ltd, Nashik"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Pure Study.jpg" title="Pure Study"
+											 alt="Pure Study"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Q-Spider.jpg" title="Q-Spider"
+											 alt="Q-Spider"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Reliance.jpg" title="Reliance"
+											 alt="Reliance"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Reylon Solar Pvt.Ltd.jpg"
+											 title="Reylon Solar Pvt.Ltd"
+											 alt="Reylon Solar Pvt.Ltd"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Rishabh Instrument.jpg"
+											 title="Rishabh Instrument"
+											 alt="Rishabh Instrument"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Sankey Solution.jpg"
+											 title="Sankey Solution"
+											 alt="Sankey Solution"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Schneider Electric, ,Nashik.jpg"
+											 title="Schneider Electric, ,Nashik"
+											 alt="Schneider Electric, ,Nashik"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Sriram Group Of Industries.jpg"
+											 title="Shriram Group Of Industries"
+											 alt="Shriram Group Of Industries"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Syntel.jpg" title="Syntel"
+											 alt="Syntel"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\tcs.jpg" title="TCS"
+											 alt="TCS"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Technocrats Industrial,.jpg"
+											 title="Technocrats Industrial"
+											 alt="Technocrats Industrial"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\techSys.jpg" title="Tech Sys"
+											 alt="Tech Sys"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\WES-01.jpg" title="WES-01"
+											 alt="WES-01"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\WeShineTech Logo1-lw-scaled.jpg"
+											 title="We Shine Tech"
+											 alt="We Shine Tech"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\win3.jpg" title="WIN-3"
+											 alt="WIN-3"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Wipro Technology ,Pune.jpg"
+											 title="Wipro Technology ,Pune"
+											 alt="Wipro Technology ,Pune"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Z Tech.jpg" title="Z Tech"
+											 alt="Z Tech"/></a>
+						</div>
+						<div class="item">
+							<a href="#"><img src="assets\images\tpo\recruiters\Zensar.jpg" title="Zensar"
+											 alt="Zensar"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- START SECTION CLIENT LOGO -->
+</div>
+<!-- START FOOTER SECTION -->
+<!---/Location Map  -->
+<div class="gmap-locaton section-h-space">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div id="headingMap">
+					<a href="https://goo.gl/maps/114jeH7pV9u8o6sd9" target="_blank" title="Click to open a map"
+					   class="btn-map-marker">
+						<img src="assets/images/icons/icons8-google-maps-48.png"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---/Location Map EOC -->
+
+<!-- Home Popup Section
+<div class="modal fade" id="onload-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content border-0 radius_none">
+			<div class="modal-body p-0">
+				<div class="p-2 border-danger" style="border-top: solid 3px">
+					<button type="button" class="close float-right" style="font-size:0.5rem"
+							data-dismiss="modal"
+							aria-label="Close">
+						<span aria-hidden="true"><i class="ion-close-round"></i></span>
+					</button>
+				</div>
+				<div class="newsletter-pop-up p-3">
+					<div class="justify-content-center pb-3">
+						<div class="heading_s3 text-center">
+							<h4>Welcome to Matoshri College of Engineering & Research Centre, Eklahare, Nashik</h4>
+						</div>
+						<div class="mt-3 box_shadow4 p-3 rounded bg_light_green2" style="border:3px solid #B3D369">
+							<div class="heading_s4 text-center pb-0 mb-0 ">
+								<h5 class="pb-0">NBA Accredited</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ End Screen Load Popup Section -->
+
+<footer class="footer_dark">
+    <div class="top_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp"
+                     data-animation-delay="0.1s">
+                    <div class="footer_logo">
+                        <a href=""><img alt="logo" src="assets/images/logo/mcoerc.png"
+                                        width=80 class="float-left mr-2"></a>
+                        <h1 class="clearfix">MCOERC</h1>
+                    </div>
+                    <p class="align-content-center clearfix mb-1">Matoshri Education Society's</p>
+                    <p class="align-content-center clearfix">Matoshri College of Engineering and Research Centre,
+                        Eklahare, Nashik.</p>
+                    <ul class="contact_info contact_info_light list_none mb-4">
+                        <li>
+                            <span class="ti-location-pin"></span>
+                            <address>Eklahareshivar, Near Odhagaon,
+                                Opp Nashik-Ch. Sambhaji Nagar (Aurangabad) Highway,
+                                Nashik, Maharashtra 422105
+                            </address>
+                        </li>
+                        <li>
+                            <span class="ti-email"></span>
+                            <a href="mailto:info@matoshri.edu.in">info@matoshri.edu.in</a>
+                        </li>
+                        <li>
+                            <span class="ti-mobile"></span>
+                            <p>+91 0253 2406600</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 mb-0">Matoshri Education Society, Yeola</p>
+                            <p class="m-0 p-0">Tal. Yeola - 423401, Dist. Nashik.</p>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list_none footer_social">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp"
+                     data-animation-delay="0.2s">
+                    <h6 class="widget_title">USEFUL LINKS</h6>
+                    <ul class="list_none widget_links">
+                        <li><a href="https://engg.matoshri.edu.in/academic-calender/2022-23">Academic Calendar</a></li>
+                        <li>
+                            <a href="assets/pdf/admissions/mcoerc_admission_brochure_2023-24.pdf"
+                               target="_blank">Admission Brochure</a></li>
+                        <li><a href="iqac.html">IQAC</a></li>
+                        <li><a href="audit.html">Institute Audit Statements</a></li>
+                        <li><a href="academics/syllabus.html">Syllabus</a></li>
+                        <li><a href="nss.html">NSS</a></li>
+                        <li><a href="disclosure.html">Mandatory Disclosure</a></li>
+                        <li><a href="fra.html">Fee Regulatory Authority</a></li>
+                        <li><a href="https://engg.matoshri.edu.in/publications/technical-magazines/jan-2025">Publications</a>
+                        </li>
+                        <li><a href="assets/pdf/Scholarship and freeship available.pdf"
+                               target="_blank">Available Scholarship</a></li>
+                        <li>
+                            <a href="assets/pdf/Scholarship and freeship received in last five years.pdf"
+                               target="_blank">Received Scholarship</a></li>
+                        <li><a href="eoc.html">Equal Opportunity Center</a></li>
+                        <li><a href="assets/pdf/National Institutional Ranking Framework.pdf"
+                               target="_blank">NIRF
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp"
+                     data-animation-delay="0.3s">
+                    <h6 class="widget_title">USEFUL LINKS</h6>
+                    <ul class="list_none widget_links">
+                        <li><a href="cdp.html">College Development Plan</a></li>
+                        <li><a href="gb.html">Governing Body</a></li>
+                        <li><a href="cdc.html">College Development Committee</a>
+                        </li>
+                        <li><a href="grievance-cell.html">College Grievance Redressal
+                                Cell</a></li>
+                        <li><a href="iac.html">Institute Academic Advisory
+                                Committee</a></li>
+                        <li><a href="antiragging.html">Anti Ragging Cell</a></li>
+                        <li><a href="wgc.html">Women's Grievance Cell</a></li>
+                        <li><a href="scst.html">SC/ ST Committee</a></li>
+                        <li><a href="workshop.html">Engineering Workshop</a></li>
+                        <li><a href="assets/pdf/Service_Rules___Regulations.pdf" target="_blank">Service
+                                Rules and Regulations
+                            </a></li>
+                        <li><a href="iic.html">IIC</a></li>
+                        <li><a href="https://matoshri.edu.in/" target="_blank">Matoshri Education Society</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom_footer bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="copyright m-0 text-center">© 2026 Matoshri College of Engineering and Research Centre</p>
+                </div>
+                <div class="col-md-4 justify-content-end">
+                    <div class="box_counter text-center">
+                        <h6 class="counter_text">Visitors: <span class="counter" id="visitorsCount"></span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION -->
+
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- jquery-ui -->
+<script src="assets/js/jquery-ui.js"></script>
+<!-- popper min js -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="assets/js/parallax.js"></script>
+<!-- countdown js  -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- fit video  -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<!-- jquery.counterup.min js -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- isotope min js -->
+<script src="assets/js/isotope.min.js"></script>
+<!-- elevatezoom js -->
+<script src="assets/js/jquery.elevatezoom.js"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts.js"></script>
+
+<!-- Chart JS -->
+<script src="assets/libs/zingchart.min.js"></script>
+
+
+<script src="assets/libs/articulate/articulate.js"></script>
+
+
+<!-- Init js -->
+
+<script src="assets/js/visitors.js"></script>
+
+<script>
+	/*
+	$(window).on('load', function () {
+		setTimeout(function () {
+			$("#onload-popup").modal('show', {}, 500)
+		}, 1000);
+	});
+	*/
+	$(document).ready(function () {
+
+	});
+
+	document.getElementById('visitorsCount') && (document.getElementById('visitorsCount').textContent = '50000+');
+
+	$('#usefulLinks').on('click', function (e) {
+		e.preventDefault();
+		$("html, body").animate({scrollTop: $(document).height()}, 1000);
+	});
+
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		e.target // newly activated tab
+		e.relatedTarget // previous active tab
+		$(".owl-carousel").trigger('refresh.owl.carousel');
+	});
+
+	$('#admission-enquiry').on('click', function (e) {
+		e.preventDefault();
+		$('#admission-enquiry-popup').modal('show');
+
+
+	})
+
+	function showAdmissionEnquiryModal(e) {
+		e.preventDefault();
+		$('#admission-enquiry-popup').modal('show');
+	}
+
+	function showContactModal(e) {
+		console.log($(this).parent("td").text());
+		e.preventDefault();
+
+		//
+
+	}
+
+	$('.contact-mail').on('click', function (e) {
+		$('#contactPersonMail').val($(this).parent("td").text());
+		e.preventDefault();
+		$('#contact-popup').modal('show');
+	});
+
+	$(".alert").delay(4000).slideUp(200, function () {
+		$(this).alert('close');
+	});
+
+</script>
+
+
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out-back'
+    });
+</script>
+
+	</body>
+
+</html>

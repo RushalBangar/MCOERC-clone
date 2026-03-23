@@ -1,0 +1,30 @@
+.treeview .list-group-item {
+	cursor: pointer
+}
+
+.treeview span.indent {
+	margin-left: 10px;
+	margin-right: 10px
+}
+
+.treeview span.icon {
+	width: 12px;
+	margin-right: 5px;
+	font-size: larger;
+	font-weight: bold;
+
+}
+
+.treeview .node-disabled {
+	color: silver;
+	cursor: not-allowed
+}
+
+.treeview .list-group-item {
+	cursor: pointer;
+	display: inline-flex;
+}
+
+.treeview .list-group-item a {
+	width: 8 0%;
+}

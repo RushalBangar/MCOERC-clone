@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="Rushal Bangar" name="author">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Learn more about Admin at Matoshri College of Engineering & Research Centre, Eklahare, Nashik.">
+	<meta name="keywords" content="Engineering College, Engineering Institute,  Matoshri Engineering College, Matoshri Education Society, Matoshri Engineering College, Nashik,
+		  Best Engineering College in Nashik, Best Engineering College in Maharashtra, Savitribai Phule Pune University, Engineering, Technical Courses, Computer Engineering, Campus,
+		 Best Campus, Best College, Best Engineering College, Best Engineering Institute, Mechanical Engineering, Civil Engineering, Electrical Engineering,
+		 Electronics and Telecommunication Engineering, Artificial Intelligence and Data Science, Eklahare, Odha, Nashik, Maharashtra, University, AICTE, DTE, Best Placement">
+
+	<!-- SITE TITLE -->
+	<title>Admin - Matoshri College of Engineering (MCOERC)</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<!-- Animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Latest Bootstrap min CSS -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+
+	<link href="assets/css/datatables.min.css" rel="stylesheet">
+
+
+	<link href="assets/libs/bootstrap-treeview-1.2.0/dist/bootstrap-treeview.min.css"
+		  rel="stylesheet">
+	<!-- Google Font
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		  rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+		  rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+-->
+
+	<!-- Icon Font -->
+	<link href="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.css" rel="stylesheet">
+	<!-- Icon Font CSS -->
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!--- owl carousel CSS-->
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css?2">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" id="layoutstyle" href="assets/color/theme.css">
+
+	<!-- catchaAPI google -->
+	<script defer src='https://www.google.com/recaptcha/api.js'></script>
+
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Glassmorphism CSS -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- PREMIUM DESIGN SYSTEM -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+<!-- Floating Action Button -->
+<div class="glass-fab" onclick="handleFabClick()" data-aos="zoom-in" data-aos-delay="1000"><i class="fa fa-plus"></i></div>
+
+<!-- START HEADER -->
+<nav id="pds-nav" class="pds-nav scrolled">
+  <div class="pds-topbar">
+    <div class="pds-container" style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;gap:1.5rem;"><a href="../library.html">Library</a><a href="../feedback.html">Feedback</a></div>
+      <div style="display:flex;gap:1.5rem;"><a href="../contact.html">Contact: +91 253 230 2000</a></div>
+    </div>
+  </div>
+  <div class="pds-container"><div class="pds-navbar-main">
+    <a href="../index.html" class="pds-nav-brand">
+      <img src="../assets/images/logo/mcoerc.png" width="52" height="52" alt="MCOERC" style="border-radius:10px;">
+      <div class="pds-nav-brand-text"><div class="pds-brand-title">Matoshri College of Engineering</div><div class="pds-brand-sub">An Autonomous Institute &middot; Nashik</div></div>
+    </a>
+    <ul class="pds-nav-links">
+      <li class="pds-nav-item"><a href="../home.html" class="pds-nav-link">Home</a></li>
+      <li class="pds-nav-item"><a href="../about.html" class="pds-nav-link">About</a></li>
+      <li class="pds-nav-item"><a href="../academics/computer.html" class="pds-nav-link">Academics</a></li>
+      <li class="pds-nav-item"><a href="../admissions/fe.html" class="pds-nav-link">Admissions</a></li>
+      <li class="pds-nav-item"><a href="../admin.html" class="pds-nav-link">Administration</a></li>
+      <li class="pds-nav-item"><a href="../tpo.html" class="pds-nav-link">Placements</a></li>
+      <li class="pds-nav-item"><a href="../contact.html" class="pds-nav-link">Contact</a></li>
+    </ul>
+    <button class="pds-hamburger" id="pds-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div></div>
+</nav>
+<div class="pds-mobile-menu" id="pds-mobile-menu">
+  <ul class="pds-mobile-links">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../academics/computer.html">Academics</a></li>
+    <li><a href="../admissions/fe.html">Admissions</a></li>
+    <li><a href="../tpo.html">Placements</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- END HEADER -->
+
+<div class="modal fade" id="admission-enquiry-popup" tabindex="-1" role="dialog"
+	 aria-labelledby="modalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content border-0 radius_none">
+			<div class="modal-body">
+				<div class="newsletter-pop-up">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="ion-close-round"></i></span>
+					</button>
+					<div class="row justify-content-center">
+						<div class="col-md-12">
+							<div class="popup-form text-center">
+								<div class="popup-text">
+									<div class="heading_s3">
+										<h3>Admission Enquiry</h3>
+									</div>
+								</div>
+								<div class="field_form form_style4">
+									<form class="subscribe-form" method="post"
+										  action="https://engg.matoshri.edu.in/admissions/enquiry">
+										<div class="form-group">
+											<input required placeholder="Name" class="form-control" name="studentName" id="studentName" autocomplete="name" type="text">
+											<label for="studentName">Name</label>
+										</div>
+										<div class="form-group">
+											<input required placeholder="Mobile" class="form-control" name="mobile" id="mobile" autocomplete="tel" type="tel">
+											<label for="mobile">Mobile</label>
+										</div>
+										<div class="form-group">
+											<input required placeholder="Email" class="form-control" name="email" id="email" autocomplete="email" type="email">
+											<label for="email">Email</label>
+										</div>
+										<div class="form-group">
+											<label for="admissionFor">Admission For</label>
+											<div class="custom_select">
+											<select name="admissionFor" id="admissionFor"
+														class="form-control not_chosen" required>
+													<option value>Admission For</option>
+													<option value="First Year Engineering">FY B. Tech.
+													</option>
+													<option value="Direct Second Year Engineering">Direct Second Year B. Tech.
+													</option>
+													<option value="M.E.">M. Tech.</option>
+													<option value="M.E.">MCA</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="branch">Interested Branch</label>
+											<div class="custom_select">
+											<select class="form-control not_chosen" name="branch" id="branch" required>
+													<option value>Select Branch</option>
+													<option value="Computer Engineering">Computer Engineering</option>
+													<option value="Mechanical Engineering">Mechanical Engineering
+													</option>
+													<option value="Electronics & Telecommunication Engineering">
+														Electronics & Telecommunication Engineering
+													</option>
+													<option value="Electrical Engineering">Electrical Engineering
+													</option>
+													<option value="Information Technology">Information Technology
+													</option>
+													<option value="Civil Engineering">Civil Engineering</option>
+													<option value="Artificial Intelligence &
+														Data Science">Artificial Intelligence &
+														Data Science
+													</option>
+													<option value="Electronics and Computer Engineering">Electronics and Computer Engineering</option>
+													<option value="Master of Computer Applications">Master of Computer Applications</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<textarea placeholder="Your Message" class="form-control"
+													  name="queryMessage" id="queryMessage" rows="4"></textarea>
+											<label for="queryMessage">Your Message</label>
+										</div>
+										<div class="form-group">
+											<input type="submit" value="Submit" class="btn btn-default">
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- START SECTION BANNER -->
+<section class="breadcrumb_section small-section page-title-light" data-aos="fade-up">
+	<div class="container" data-aos="fade-up">
+		<div class="row align-items-center">
+			<div class="col-sm-6">
+				<div class="page-title">
+					<h2>Administration</h2>
+
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb justify-content-sm-end">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Administration</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END SECTION BANNER -->
+<div class="page-content">
+	<section class="padding_four_tb" data-aos="fade-up">
+		<div class="container" data-aos="fade-up">
+			<div class="row">
+				<div class="col-md-3">
+					<!--Sidebar Start-->
+<div class="tab-style11 left-aligned-tabs">
+	<ul class="nav nav-tabs" role="tablist">
+		<li class="nav-item">
+			<a href="admin.html"
+			   class="nav-link active">
+				Administration
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="https://engg.matoshri.edu.in/administration/staff"
+			   class="nav-link ">
+				<i class="ion-android-people"></i> Staff
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="https://engg.matoshri.edu.in/administration/notices"
+			   class="nav-link ">
+				<i class="ion-android-alert"></i>Notices
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="https://engg.matoshri.edu.in/administration/downloads"
+			   class="nav-link ">
+				<i class="ion-android-download"></i>Downloads
+			</a>
+		</li>
+
+		<li class="nav-item">
+			<a href="https://engg.matoshri.edu.in/administration/services"
+			   class="nav-link ">
+				<i class="ion-android-desktop"></i>Online Services
+			</a>
+		</li>
+	</ul>
+</div>
+<!--Sidebar End -->
+				</div>
+				<div class="col-md-9">
+					<div class="heading_s5">
+						<h4>Administration</h4>
+					</div>
+					<p class="text-justify">The admin department is responsible for providing various services and
+						support to stakeholders. To maintain the smooth functioning and appropriate coordination
+						among the various departments admin plays the role as backbone of the institute. Admin is an
+						important constituent of the governance in the institute that comprises of Human Resource
+						Management, Finance and Accounts, Students Support and Central Store.</p>
+					<p class="text-justify">The Human Resource Section provides a range of operational, advisory and
+						strategic services to develop the employee as well as organization. The main objective of
+						the section is to provide satisfactory and in time service to the stakeholders. The Major
+						responsibility of the section includes the planning, governance, notification and execution
+						for smooth implementation of timely tasks and services. Prof. Dr. Varsha H. Patil, Vice
+						Principal work as a professor coordinator and Mr. Baban T. Nagare works as an Office
+						Superintendent and section head. </p>
+					<p class="text-justify">The Finance and Account Section are involved in budgetary and monitory
+						provisions needed for the development of institute. Main objective of this section is to
+						provide the satisfactory and in time services to the stakeholders. The major
+						responsibilities of this section includes financial planning and budgeting, funds
+						allocation, salary account maintenance, bill payments, receiving fees and auditing the
+						accounts. This section takes care of student and staff welfare and insurance. This section
+						works as per the guidelines given by governing body.</p>
+					<p class="text-justify">The Students Support Section is involved in providing necessary services
+						to the students. These services include intimation of student notices, admissions,
+						examination services, query resolutions, scholarship and freeship services; maintain the
+						student records and issuing various certificates on demand. The main objective of this
+						section is to provide the satisfactory and in time services to the students. This section
+						also provides the services to academic departments. Prof. Devidas D. Dighe head of E&
+						TC work as a professor coordinator for the section and Mr. Nitin M. Kumawat work as senior
+						clerk and section head.</p>
+					<p class="text-justify">The Central Store is involved in providing necessary services to the
+						academic and administrative departments. These services include receiving the requirements,
+						purchase, procurement, facilitating maintenance of equipment’s and appliances and maintain
+						the records and inventory. The main objective of this section is to provide the satisfactory
+						and in time services to departments. Prof. Shridhar S. Khule head Electrical Engineering
+						Dept. work as a professor coordinator for the section and Mr. Ravindra R. Hullule work as
+						storekeeper and section head.</p>
+					<p class="text-justify">All these service providing sections work in strong coordination
+						contributing towards effective and efficient implementation of policies of the institute for
+						the benefit of stakeholders.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- START FOOTER SECTION -->
+<!---/Location Map  -->
+<div class="gmap-locaton section-h-space">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div id="headingMap">
+					<a href="https://goo.gl/maps/114jeH7pV9u8o6sd9" target="_blank" title="Click to open a map"
+					   class="btn-map-marker">
+						<img src="assets/images/icons/icons8-google-maps-48.png"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---/Location Map EOC -->
+<footer class="pds-footer"><div class="pds-container">
+  <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;">
+    <div><div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem;">
+      <img src="../assets/images/logo/mcoerc.png" width="48" height="48" alt="MCOERC" style="border-radius:8px;">
+      <span style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--clr-gold);">MCOERC</span>
+    </div>
+    <p style="color:var(--clr-text-muted);font-size:0.875rem;line-height:1.7;">Matoshri College of Engineering &amp; Research Centre, Eklahare, Nashik &mdash; Autonomous Institute since 2008.</p>
+    <div class="footer-social"><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></div>
+  </div>
+  <div><div class="footer-col-title">Quick Links</div><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../tpo.html">Placements</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+  <div><div class="footer-col-title">Contact</div><div class="contact-item"><i class="fa fa-phone"></i><span>+91 253 230 2000</span></div><div class="contact-item"><i class="fa fa-envelope"></i><span>info@mcoerc.ac.in</span></div></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 MCOERC. All rights reserved.</p><p>An Autonomous Institute &mdash; Nashik</p></div>
+</div></footer>
+<div id="scrollToTop"><i class="fa fa-chevron-up"></i></div>
+
+<!-- END FOOTER SECTION -->
+
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- jquery-ui -->
+<script src="assets/js/jquery-ui.js"></script>
+<!-- popper min js -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="assets/js/parallax.js"></script>
+<!-- countdown js  -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- fit video  -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<!-- jquery.counterup.min js -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- isotope min js -->
+<script src="assets/js/isotope.min.js"></script>
+<!-- elevatezoom js -->
+<script src="assets/js/jquery.elevatezoom.js"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts.js"></script>
+
+<!-- Chart JS -->
+<script src="assets/libs/zingchart.min.js"></script>
+
+
+<script src="assets/libs/articulate/articulate.js"></script>
+
+
+
+<!-- Init js -->
+
+<script src="assets/js/visitors.js"></script>
+
+<script>
+	$(document).ready(function () {
+
+	});
+
+	document.getElementById('visitorsCount') && (document.getElementById('visitorsCount').textContent = '50000+');
+
+	$('#usefulLinks').on('click', function (e) {
+		e.preventDefault();
+		$("html, body").animate({scrollTop: $(document).height()}, 1000);
+	});
+
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		e.target // newly activated tab
+		e.relatedTarget // previous active tab
+		$(".owl-carousel").trigger('refresh.owl.carousel');
+	});
+
+	$('#admission-enquiry').on('click', function (e) {
+		e.preventDefault();
+		$('#admission-enquiry-popup').modal('show');
+
+
+	})
+
+	function showAdmissionEnquiryModal(e) {
+		e.preventDefault();
+		$('#admission-enquiry-popup').modal('show');
+	}
+
+	function showContactModal(e) {
+		console.log($(this).parent("td").text());
+		e.preventDefault();
+
+		//
+
+	}
+
+	$('.contact-mail').on('click', function (e) {
+		$('#contactPersonMail').val($(this).parent("td").text());
+		e.preventDefault();
+		$('#contact-popup').modal('show');
+	});
+
+	$(".alert").delay(4000).slideUp(200, function () {
+		$(this).alert('close');
+	});
+
+</script>
+
+
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out-back'
+    });
+</script>
+
+	</body>
+
+</html>
