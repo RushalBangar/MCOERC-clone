@@ -8,31 +8,29 @@
   <meta name="description" content="An Autonomous Institute in Nashik dedicated to technical excellence, innovation, and holistic development.">
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
   
-  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Formal Academic Theme -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
 <!-- ── HEADER / NAVIGATION ── -->
-<header class="academic-header">
+<header class="premium-header">
   <div class="top-bar">
-    <div class="academic-container" style="display: flex; justify-content: space-between;">
-      <div>
+    <div class="premium-container" style="display: flex; justify-content: space-between;">
+      <div style="display:flex; align-items:center;">
         <a href="library.html"><i class="fa fa-book"></i> Library</a>
         <a href="feedback.html"><i class="fa fa-comment"></i> Feedback</a>
         <a href="https://learning.matoshri.edu.in/" target="_blank"><i class="fa fa-graduation-cap"></i> Knowledge Base</a>
       </div>
-      <div>
+      <div style="display:flex; align-items:center;">
         <a href="contact.html"><i class="fa fa-phone"></i> +91 253 230 2000</a>
         <a href="mailto:info@mcoerc.ac.in"><i class="fa fa-envelope"></i> info@mcoerc.ac.in</a>
       </div>
     </div>
   </div>
 
-  <div class="academic-container">
+  <div class="premium-container">
     <nav class="navbar-main">
       <a href="index.html" class="brand-wrapper">
         <img src="assets/images/logo/mcoerc.png" alt="MCOERC">
@@ -42,172 +40,489 @@
         </div>
       </a>
       
+      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        <i class="fa fa-bars"></i>
+      </button>
+
       <ul class="nav-links">
         <li><a href="home.html">Home</a></li>
         <li>
-          <a href="about.html">About <i class="fa fa-chevron-down" style="font-size:0.7em;"></i></a>
+          <a href="about.html">About <i class="fa fa-chevron-down" style="font-size:0.65em; margin-left:4px;"></i></a>
           <div class="dropdown-menu">
             <a href="about.html">About Institute</a>
             <a href="vision.html">Vision & Mission</a>
+            <a href="secretary.html">Secretary's Desk</a>
+            <a href="principal.html">Director's Desk</a>
             <a href="gb.html">Governing Body</a>
+            <a href="council.html">Academic Council</a>
             <a href="governance.html">Governance</a>
           </div>
         </li>
         <li>
-          <a href="academics/computer.html">Academics <i class="fa fa-chevron-down" style="font-size:0.7em;"></i></a>
+          <a href="academics/computer.html">Academics <i class="fa fa-chevron-down" style="font-size:0.65em; margin-left:4px;"></i></a>
           <div class="dropdown-menu">
             <a href="academics/computer.html">Computer Engineering</a>
             <a href="academics/it.html">Information Technology</a>
+            <a href="academics/electronics.html">Electronics & TC Engg.</a>
             <a href="academics/mechanical.html">Mechanical Engineering</a>
             <a href="academics/civil.html">Civil Engineering</a>
+            <a href="academics/electrical.html">Electrical Engineering</a>
+            <a href="academics/aids.html">AI & Data Science</a>
+            <a href="academics/mca.html">MCA</a>
           </div>
         </li>
         <li>
-          <a href="admissions/fe.html">Admissions</a>
+          <a href="admissions/fe.html">Admissions <i class="fa fa-chevron-down" style="font-size:0.65em; margin-left:4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="admissions/fe.html">First Year UG (B.Tech)</a>
+            <a href="admissions/dsy.html">Direct Second Year</a>
+            <a href="admissions/me.html">M.Tech / MCA PG</a>
+            <a href="admissions/phd.html">Ph.D</a>
+          </div>
         </li>
+        <li><a href="admin.html">Administration</a></li>
         <li><a href="tpo.html">Placements</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="admissions/fe.html" class="btn-academic">Apply Now</a>
+      <a href="admissions/fe.html" class="btn-premium btn-accent">Apply Now <i class="fa fa-arrow-right"></i></a>
     </nav>
   </div>
 </header>
 
 <!-- ── HERO ── -->
-<section class="academic-hero">
-  <div class="academic-container">
-    <div style="margin-bottom: 2rem;">
-      <span style="font-family:var(--font-heading); color:var(--clr-gold); font-size: 1.2rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em;">
-        Autonomous Institute · Est. 2008
-      </span>
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="premium-container hero-content">
+    <div class="hero-badge">
+      <i class="fa fa-certificate text-accent" style="margin-right:6px;"></i> Autonomous Institute · Est. 2008
     </div>
-    <h1>Engineering Excellence at MCOERC</h1>
-    <p>NBA & NAAC Accredited Autonomous Institute in Nashik, affiliated to Savitribai Phule Pune University. Shaping the innovators of tomorrow through quality education and research.</p>
-    <div style="display:flex; gap:1rem; justify-content:center; margin-top: 3rem;">
-      <a href="admissions/fe.html" class="btn-academic btn-gold">Admission Inquiry</a>
-      <a href="about.html" class="btn-academic btn-academic-outline">Explore Campus</a>
+    <h1 class="hero-title">Shaping the <span class="text-accent">Innovators</span> of Tomorrow</h1>
+    <p class="hero-desc">Experience technical excellence at MCOERC, an NBA & NAAC Accredited Autonomous Institute affiliated to Savitribai Phule Pune University.</p>
+    <div class="hero-cta">
+      <a href="admissions/fe.html" class="btn-premium btn-accent">Explore Programmes</a>
+      <a href="about.html" class="btn-premium btn-outline">Campus Virtual Tour <i class="fa fa-play-circle" style="margin-left:5px;"></i></a>
     </div>
   </div>
 </section>
 
 <!-- ── NOTICE TICKER ── -->
-<div style="background:var(--clr-primary-light); color:#fff; padding:0.5rem 0; font-size:0.85rem;">
-  <div class="academic-container">
-    <strong><i class="fa fa-bullhorn" style="color:var(--clr-gold);"></i> Latest News:</strong>
-    <span style="margin-left:1rem;">Admissions Open 2025–26 for B.Tech, M.Tech & MCA. MCOERC receives Autonomous status.</span>
+<div class="notice-ticker">
+  <div class="premium-container" style="display:flex; align-items:center;">
+    <strong style="white-space:nowrap; margin-right:20px; color:var(--clr-accent);">
+      <i class="fa fa-bolt"></i> Latest Updates:
+    </strong>
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="font-weight:500;">
+      <span style="margin-right:40px;">◆ MCOERC receives Autonomous status from AY 2024–25</span>
+      <span style="margin-right:40px;">◆ Admissions Open 2025–26 for B.Tech, M.Tech & MCA</span>
+      <span style="margin-right:40px;">◆ NBA Accreditation renewed for all eligible programmes</span>
+      <span style="margin-right:40px;">◆ National Digital Library membership now available for students</span>
+    </marquee>
   </div>
 </div>
 
+<!-- ── STATS BAR ── -->
+<section class="stats-bar">
+  <div class="premium-container stats-grid">
+    <div class="stat-card">
+      <div class="stat-num" data-target="2008">0</div>
+      <div class="stat-label">Established</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-target="5000">0</div>
+      <div class="stat-label">Students Enrolled</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-target="250">0</div>
+      <div class="stat-label">Expert Faculty</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-target="92">0</div>
+      <div class="stat-label">Percent Placement</div>
+    </div>
+  </div>
+</section>
+
 <!-- ── ABOUT SECTION ── -->
-<section style="padding: 6rem 0; background:var(--clr-bg);">
-  <div class="academic-container grid-3">
-    <div style="grid-column: span 2;">
-      <h3 style="color:var(--clr-gold); font-family:var(--font-body); font-size:1rem; text-transform:uppercase; margin-bottom:0.5rem;">Welcome to MCOERC</h3>
-      <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">A Legacy of <br>Technical Excellence</h2>
-      <p style="color:var(--clr-text-muted); font-size:1.1rem; line-height:1.8;">
-        Established in 2008 at Eklahare, Nashik, Matoshri College of Engineering & Research Centre is committed to providing world-class technical education. With NBA & NAAC accreditation and autonomous status, we offer 4-year B.Tech, M.Tech, and MCA programmes designed to meet the rigorous demands of the global industry.
+<section class="premium-section" style="background:var(--clr-surface);">
+  <div class="premium-container about-grid">
+    <div>
+      <span class="section-label">Welcome to MCOERC</span>
+      <h2 class="section-title">A Legacy of <br><span class="text-accent">Technical Excellence</span></h2>
+      <p style="color:var(--clr-text-muted); font-size:1.1rem; line-height:1.8; margin-bottom:1.5rem;">
+        Established in 2008 at Eklahare, Nashik, Matoshri College of Engineering & Research Centre is committed to providing world-class technical education. With NBA & NAAC accreditation, we offer cutting-edge 4-year B.Tech, M.Tech, and MCA programmes.
       </p>
-      <div style="margin-top: 2rem;">
-        <a href="about.html" class="btn-academic btn-academic-outline">Read More</a>
+      
+      <!-- Vision Mission Tabs -->
+      <div class="vm-tabs">
+        <button class="vm-tab active" onclick="switchTab('vision')">Our Vision</button>
+        <button class="vm-tab" onclick="switchTab('mission')">Our Mission</button>
+      </div>
+      <div id="tab-vision" style="display:block;">
+        <p style="font-size:1.15rem; font-style:italic; font-family:var(--font-heading); font-weight:500; border-left:4px solid var(--clr-accent); padding-left:1rem; color:var(--clr-primary);">
+          "To Establish an Omnipotent Learning Centre Meeting the Standards to Evolve as a Lighthouse for the Society."
+        </p>
+      </div>
+      <div id="tab-mission" style="display:none;">
+        <ul style="list-style:none; padding:0; margin:0; color:var(--clr-text-muted);">
+          <li style="margin-bottom:8px;"><i class="fa fa-check text-accent" style="margin-right:10px;"></i>Setting up state-of-the-art infrastructure</li>
+          <li style="margin-bottom:8px;"><i class="fa fa-check text-accent" style="margin-right:10px;"></i>Empowering through quality technical education</li>
+          <li style="margin-bottom:8px;"><i class="fa fa-check text-accent" style="margin-right:10px;"></i>Developing as a prominent Research centre</li>
+        </ul>
+      </div>
+      
+      <div style="margin-top:2.5rem;">
+        <a href="about.html" class="btn-premium btn-accent">Read Full Story</a>
       </div>
     </div>
-    <div>
-      <img src="assets/images/about/about1.jpg" alt="MCOERC Campus" style="width:100%; border-radius:var(--radius-md); box-shadow:var(--shadow-md);">
+    
+    <div class="about-images">
+      <img src="assets/images/about/about1.jpg" alt="Lab" class="about-img img-tall">
+      <img src="assets/images/slider/1.jpeg" alt="Campus View" class="about-img">
+      <img src="assets/images/slider/1.jpeg" alt="Students" class="about-img">
     </div>
   </div>
 </section>
 
 <!-- ── DEPARTMENTS ── -->
-<section style="padding: 6rem 0; background:var(--clr-bg-alt);">
-  <div class="academic-container">
-    <div class="section-title">
-      <h3 style="color:var(--clr-gold); font-family:var(--font-body); font-size:1rem; text-transform:uppercase; margin-bottom:0.5rem;">Academic Programmes</h3>
-      <h2>Our Departments</h2>
+<section class="premium-section">
+  <div class="premium-container">
+    <div class="section-header">
+      <span class="section-label">Academic Programmes</span>
+      <h2 class="section-title">Explore Our Departments</h2>
+      <p class="section-desc">Nine cutting-edge engineering disciplines designed to shape the innovators of tomorrow and prepare you for the global industry.</p>
     </div>
     
     <div class="grid-3">
-      <div class="academic-card text-center">
-        <i class="fa fa-laptop-code" style="font-size:3rem; color:var(--clr-primary); margin-bottom:1.5rem;"></i>
-        <h4>Computer Engineering</h4>
-        <p style="color:var(--clr-text-muted);">Cutting-edge curriculum focused on software development, AI, and computing systems.</p>
-        <a href="academics/computer.html" style="font-weight:600; font-size:0.9rem;">Learn More &rarr;</a>
-      </div>
-      
-      <div class="academic-card text-center">
-        <i class="fa fa-cogs" style="font-size:3rem; color:var(--clr-primary); margin-bottom:1.5rem;"></i>
-        <h4>Mechanical Engineering</h4>
-        <p style="color:var(--clr-text-muted);">Comprehensive training in design, thermal sciences, and manufacturing technologies.</p>
-        <a href="academics/mechanical.html" style="font-weight:600; font-size:0.9rem;">Learn More &rarr;</a>
-      </div>
-      
-      <div class="academic-card text-center">
-        <i class="fa fa-network-wired" style="font-size:3rem; color:var(--clr-primary); margin-bottom:1.5rem;"></i>
-        <h4>Information Technology</h4>
-        <p style="color:var(--clr-text-muted);">Specialized focus on networking, enterprise applications, and IT infrastructure.</p>
-        <a href="academics/it.html" style="font-weight:600; font-size:0.9rem;">Learn More &rarr;</a>
-      </div>
-    </div>
-    
-    <div class="text-center mt-4">
-      <a href="academics/computer.html" class="btn-academic btn-academic-outline">View All Departments</a>
+      <a href="academics/computer.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-laptop-code"></i></div>
+        <h3>Computer Engineering</h3>
+        <p>Software development, AI, algorithms, and computing systems.</p>
+      </a>
+      <a href="academics/it.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-network-wired"></i></div>
+        <h3>Information Technology</h3>
+        <p>Networking, enterprise applications, and cloud infrastructure.</p>
+      </a>
+      <a href="academics/mechanical.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-cogs"></i></div>
+        <h3>Mechanical Engineering</h3>
+        <p>Design, thermal sciences, applied mechanics, and advanced robotics.</p>
+      </a>
+      <a href="academics/civil.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-hard-hat"></i></div>
+        <h3>Civil Engineering</h3>
+        <p>Structural design, urban planning, and large-scale construction.</p>
+      </a>
+      <a href="academics/electrical.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-bolt"></i></div>
+        <h3>Electrical Engineering</h3>
+        <p>Renewable energy, power systems, and electric vehicle technology.</p>
+      </a>
+      <a href="academics/aids.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-brain"></i></div>
+        <h3>AI & Data Science</h3>
+        <p>Machine learning, big data analytics, and neural networks.</p>
+      </a>
+      <a href="academics/electronics.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-mobile-alt"></i></div>
+        <h3>E&TC Engineering</h3>
+        <p>Embedded systems, telecommunications, and VLSI design.</p>
+      </a>
+      <a href="academics/science.html" class="premium-card">
+        <div class="card-icon"><i class="fa fa-search"></i></div>
+        <h3>Engineering Sciences</h3>
+        <p>Foundational studies, applied physics, and mathematics.</p>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ── ACCREDITATIONS ── -->
-<section style="padding: 4rem 0; background:var(--clr-primary); color:#fff; text-align:center;">
-  <div class="academic-container">
-    <h3 style="color:var(--clr-gold); font-size:1.5rem; margin-bottom:2rem;">Recognized & Accredited By</h3>
-    <div style="display:flex; justify-content:center; gap:3rem; flex-wrap:wrap;">
-      <div><i class="fa fa-award" style="font-size:2rem; margin-bottom:0.5rem; color:var(--clr-gold);"></i><br><strong>NBA Accredited</strong></div>
-      <div><i class="fa fa-star" style="font-size:2rem; margin-bottom:0.5rem; color:var(--clr-gold);"></i><br><strong>NAAC Accredited</strong></div>
-      <div><i class="fa fa-certificate" style="font-size:2rem; margin-bottom:0.5rem; color:var(--clr-gold);"></i><br><strong>AICTE Approved</strong></div>
-      <div><i class="fa fa-university" style="font-size:2rem; margin-bottom:0.5rem; color:var(--clr-gold);"></i><br><strong>SPPU Affiliated</strong></div>
+<!-- ── NOTICE BOARDS ── -->
+<section class="premium-section" style="background:var(--clr-surface); border-top:1px solid var(--clr-border);">
+  <div class="premium-container">
+    <div class="section-header">
+      <span class="section-label">Stay Informed</span>
+      <h2 class="section-title">Notices & Announcements</h2>
+    </div>
+    
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)); gap:3rem;">
+      
+      <!-- Academic Notices -->
+      <div class="notice-wrapper">
+        <div class="notice-header">
+          <h3><i class="fa fa-bell text-accent" style="margin-right:8px;"></i> Academic Notices</h3>
+        </div>
+        <div class="notice-body">
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">26</span><span class="mon">Nov</span></div>
+            <div class="notice-content">
+              <h4>Backlog and Improvement Syllabus</h4>
+              <p>Guidelines for backlog and improvement examinations.</p>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">22</span><span class="mon">Dec</span></div>
+            <div class="notice-content">
+              <h4>SPPU Practical Exam Postponement</h4>
+              <p>All practical exams postponed to second semester.</p>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">10</span><span class="mon">Jan</span></div>
+            <div class="notice-content">
+              <h4>Class Improvement Exam Timetable</h4>
+              <p>Timetable for Class Improvement Online Examination.</p>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">16</span><span class="mon">Feb</span></div>
+            <div class="notice-content">
+              <h4>Rules — Honours and Minors</h4>
+              <p>Regulations for Honours and Minors under Faculty of Science.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scholarship Notices -->
+      <div class="notice-wrapper">
+        <div class="notice-header" style="background:var(--clr-primary-light);">
+          <h3><i class="fa fa-hand-holding-usd text-accent" style="margin-right:8px;"></i> Scholarships & Info</h3>
+        </div>
+        <div class="notice-body">
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">01</span><span class="mon">Aug</span></div>
+            <div class="notice-content">
+              <h4>Scholarship Notice 2024–25</h4>
+              <p>Apply for scholarships through the official MahaDBT portal.</p>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">15</span><span class="mon">Sep</span></div>
+            <div class="notice-content">
+              <h4>EBC Scholarship Application</h4>
+              <p>Economically Backward Class applications are open.</p>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="date-badge"><span class="day">25</span><span class="mon">Jan</span></div>
+            <div class="notice-content">
+              <h4>National Digital Library Membership</h4>
+              <p>MCOERC is now a registered member of NDL India.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ── RECRUITERS MARQUEE ── -->
+<section class="premium-section" style="padding-bottom: 2rem;">
+  <div class="premium-container">
+    <div class="section-header" style="margin-bottom: 2rem;">
+      <h2 class="section-title" style="font-size: 2.2rem;">Our Top Recruiters</h2>
+    </div>
+  </div>
+  <div class="marquee-container" style="background:transparent; border:none; padding:0;">
+    <div class="marquee-track" style="animation-duration: 35s;">
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Sriram Group Of Industries.jpg" alt="Shriram"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Syntel.jpg" alt="Syntel"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Capgemini,Mumbai.jpg" alt="Capgemini"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Technocrats Industrial,.jpg" alt="Technocrats"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/WES-01.jpg" alt="WRS"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Reliance.jpg" alt="Reliance"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Bosch.jpg" alt="Bosch"></div>
+      <!-- Duplicate for looping -->
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Sriram Group Of Industries.jpg" alt="Shriram"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Syntel.jpg" alt="Syntel"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Capgemini,Mumbai.jpg" alt="Capgemini"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Technocrats Industrial,.jpg" alt="Technocrats"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/WES-01.jpg" alt="WRS"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Reliance.jpg" alt="Reliance"></div>
+      <div class="recruiter-item"><img src="assets/images/tpo/recruiters/Bosch.jpg" alt="Bosch"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ACCREDITATIONS MARQUEE ── -->
+<div class="marquee-container">
+  <div class="marquee-track">
+    <div class="marquee-item"><i class="fa fa-award"></i> NBA Accredited</div>
+    <div class="marquee-item"><i class="fa fa-star"></i> NAAC Accredited</div>
+    <div class="marquee-item"><i class="fa fa-certificate"></i> AICTE Approved</div>
+    <div class="marquee-item"><i class="fa fa-university"></i> SPPU Affiliated</div>
+    <div class="marquee-item"><i class="fa fa-shield-alt"></i> UGC 2(F)/12(B)</div>
+    <div class="marquee-item"><i class="fa fa-landmark"></i> DTE Approved</div>
+    <div class="marquee-item"><i class="fa fa-flask"></i> Research Centre</div>
+    <!-- Duplicate for loop illusion -->
+    <div class="marquee-item"><i class="fa fa-award"></i> NBA Accredited</div>
+    <div class="marquee-item"><i class="fa fa-star"></i> NAAC Accredited</div>
+    <div class="marquee-item"><i class="fa fa-certificate"></i> AICTE Approved</div>
+  </div>
+</div>
+
+<!-- ── GALLERY ── -->
+<section class="premium-section" style="background:var(--clr-bg);">
+  <div class="premium-container">
+    <div class="section-header">
+      <span class="section-label">Campus Life</span>
+      <h2 class="section-title">Life at MCOERC</h2>
+    </div>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item wide">
+        <img src="assets/images/slider/1.jpeg" alt="Campus">
+        <div class="gallery-overlay"><span>Main Campus</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/about/about1.jpg" alt="Labs">
+        <div class="gallery-overlay"><span>Engineering Block</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/slider/1.jpeg" alt="Students">
+        <div class="gallery-overlay"><span>Student Activities</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/about/about1.jpg" alt="Research">
+        <div class="gallery-overlay"><span>Research Labs</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="assets/images/slider/1.jpeg" alt="Sports">
+        <div class="gallery-overlay"><span>Sports & Recreation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA STRIP ── -->
+<section class="cta-strip">
+  <div class="premium-container" style="position:relative; z-index:2;">
+    <span style="font-family:var(--font-heading); color:var(--clr-accent); font-weight:700; font-size:1.1rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1rem; display:block;">Admissions Open 2025–26</span>
+    <h2 style="font-size:3rem; margin-bottom:1.5rem; color:#fff;">Ready to Shape Your Future?</h2>
+    <p style="color:#cbd5e1; font-size:1.2rem; max-width:600px; margin:0 auto 2.5rem;">Join MCOERC — where technical excellence meets innovation. Apply today for B.Tech, M.Tech or MCA programmes.</p>
+    <div>
+      <a href="admissions/fe.html" class="btn-premium btn-accent" style="margin-right:1rem;">Apply for Admission</a>
+      <a href="contact.html" class="btn-premium btn-outline">Enquire Now</a>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ── -->
-<footer class="academic-footer">
-  <div class="academic-container">
+<footer class="premium-footer">
+  <div class="premium-container">
     <div class="footer-grid">
-      <div class="footer-col">
-        <h3>About MCOERC</h3>
-        <p style="color:#c0c0c0; font-size:0.9rem; margin-bottom:1rem;">Matoshri College of Engineering & Research Centre, Eklahare, Nashik — An Autonomous Institute committed to technical excellence since 2008.</p>
-        <div style="font-size:1.5rem;">
-          <a href="#" style="margin-right:1rem;"><i class="fab fa-facebook"></i></a>
-          <a href="#" style="margin-right:1rem;"><i class="fab fa-twitter"></i></a>
-          <a href="#" style="margin-right:1rem;"><i class="fab fa-linkedin"></i></a>
+      <div class="footer-brand">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="assets/images/logo/mcoerc.png" width="60" style="border-radius:12px;" alt="MCOERC">
+          <h2 style="color:#fff; margin:0; font-size:1.8rem;">MCOERC</h2>
+        </div>
+        <p>Matoshri College of Engineering & Research Centre, Nashik — An Autonomous Institute committed to technical excellence and moral values since 2008.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       
       <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
           <li><a href="about.html">About Institute</a></li>
-          <li><a href="admissions/fe.html">Admissions</a></li>
+          <li><a href="vision.html">Vision & Mission</a></li>
+          <li><a href="admin.html">Administration</a></li>
           <li><a href="tpo.html">Training & Placement</a></li>
-          <li><a href="alumni.html">Alumni</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="alumni.html">Alumni Network</a></li>
+          <li><a href="disclosure.html">Mandatory Disclosure</a></li>
         </ul>
       </div>
       
       <div class="footer-col">
-        <h3>Contact Us</h3>
-        <ul>
-          <li><i class="fa fa-map-marker-alt" style="color:var(--clr-gold); width:20px;"></i> Eklahare, Near Odhagaon, Nashik</li>
-          <li><i class="fa fa-phone" style="color:var(--clr-gold); width:20px;"></i> +91 253 230 2000</li>
-          <li><i class="fa fa-envelope" style="color:var(--clr-gold); width:20px;"></i> info@mcoerc.ac.in</li>
+        <h4>Academics</h4>
+        <ul class="footer-links">
+          <li><a href="academics/computer.html">Computer Science</a></li>
+          <li><a href="academics/it.html">Information Tech</a></li>
+          <li><a href="academics/aids.html">AI & Data Science</a></li>
+          <li><a href="academics/mechanical.html">Mechanical Engg</a></li>
+          <li><a href="academics/civil.html">Civil Engineering</a></li>
+          <li><a href="academics/mca.html">MCA Programme</a></li>
         </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-list">
+          <div style="display:flex; gap:10px;">
+            <i class="fa fa-map-marker-alt" style="margin-top:5px;"></i>
+            <span>Eklahare, Near Odhagaon, Nashik – 422 003, Maharashtra</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <i class="fa fa-phone"></i>
+            <span>+91 253 230 2000</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <i class="fa fa-envelope"></i>
+            <span>info@mcoerc.ac.in</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <i class="fa fa-globe"></i>
+            <a href="https://www.mcoerc.ac.in" style="color:var(--clr-accent);">www.mcoerc.ac.in</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="academic-container">
-      &copy; 2025 Matoshri College of Engineering & Research Centre. All rights reserved.
+    <div class="premium-container">
+      &copy; 2026 Matoshri College of Engineering & Research Centre. All rights reserved.
     </div>
   </div>
 </footer>
+
+<!-- Interactive Scripts -->
+<script>
+  // Vision / Mission Tab Toggle
+  function switchTab(tabId) {
+    document.querySelectorAll('.vm-tab').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById('tab-vision').style.display = 'none';
+    document.getElementById('tab-mission').style.display = 'none';
+    document.getElementById('tab-' + tabId).style.display = 'block';
+  }
+
+  // CountUp Animation
+  document.addEventListener('DOMContentLoaded', () => {
+    const stats = document.querySelectorAll('.stat-num');
+    let hasCounted = false;
+
+    function animateStats() {
+      if (hasCounted) return;
+      const rect = document.querySelector('.stats-bar').getBoundingClientRect();
+      if(rect.top < window.innerHeight - 100) {
+        hasCounted = true;
+        stats.forEach(stat => {
+          const target = +stat.getAttribute('data-target');
+          const duration = 2000;
+          const increment = target / (duration / 16);
+          let current = 0;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              stat.innerText = target + (target > 200 ? '+' : (target == 92 ? '%' : ''));
+              clearInterval(timer);
+            } else {
+              stat.innerText = Math.ceil(current);
+            }
+          }, 16);
+        });
+      }
+    }
+    window.addEventListener('scroll', animateStats);
+    animateStats(); // In case it's in view on load
+  });
+</script>
 
 </body>
 </html>

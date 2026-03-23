@@ -72,41 +72,78 @@
 <div class="glass-fab" onclick="handleFabClick()" data-aos="zoom-in" data-aos-delay="1000"><i class="fa fa-plus"></i></div>
 
 <!-- START HEADER -->
-<nav id="pds-nav" class="pds-nav scrolled">
-  <div class="pds-topbar">
-    <div class="pds-container" style="display:flex;justify-content:space-between;align-items:center;">
-      <div style="display:flex;gap:1.5rem;"><a href="../library.html">Library</a><a href="../feedback.html">Feedback</a></div>
-      <div style="display:flex;gap:1.5rem;"><a href="../contact.html">Contact: +91 253 230 2000</a></div>
+<header class="premium-header">
+  <div class="top-bar">
+    <div class="premium-container" style="display: flex; justify-content: space-between;">
+      <div style="display:flex; align-items:center;">
+        <a href="library.html"><i class="fa fa-book"></i> Library</a>
+        <a href="feedback.html"><i class="fa fa-comment"></i> Feedback</a>
+        <a href="https://learning.matoshri.edu.in/" target="_blank"><i class="fa fa-graduation-cap"></i> Knowledge Base</a>
+      </div>
+      <div style="display:flex; align-items:center;">
+        <a href="contact.html"><i class="fa fa-phone"></i> +91 253 230 2000</a>
+        <a href="mailto:info@mcoerc.ac.in"><i class="fa fa-envelope"></i> info@mcoerc.ac.in</a>
+      </div>
     </div>
   </div>
-  <div class="pds-container"><div class="pds-navbar-main">
-    <a href="../index.html" class="pds-nav-brand">
-      <img src="../assets/images/logo/mcoerc.png" width="52" height="52" alt="MCOERC" style="border-radius:10px;">
-      <div class="pds-nav-brand-text"><div class="pds-brand-title">Matoshri College of Engineering</div><div class="pds-brand-sub">An Autonomous Institute &middot; Nashik</div></div>
-    </a>
-    <ul class="pds-nav-links">
-      <li class="pds-nav-item"><a href="../home.html" class="pds-nav-link">Home</a></li>
-      <li class="pds-nav-item"><a href="../about.html" class="pds-nav-link">About</a></li>
-      <li class="pds-nav-item"><a href="../academics/computer.html" class="pds-nav-link">Academics</a></li>
-      <li class="pds-nav-item"><a href="../admissions/fe.html" class="pds-nav-link">Admissions</a></li>
-      <li class="pds-nav-item"><a href="../admin.html" class="pds-nav-link">Administration</a></li>
-      <li class="pds-nav-item"><a href="../tpo.html" class="pds-nav-link">Placements</a></li>
-      <li class="pds-nav-item"><a href="../contact.html" class="pds-nav-link">Contact</a></li>
-    </ul>
-    <button class="pds-hamburger" id="pds-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div></div>
-</nav>
-<div class="pds-mobile-menu" id="pds-mobile-menu">
-  <ul class="pds-mobile-links">
-    <li><a href="../home.html">Home</a></li>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../academics/computer.html">Academics</a></li>
-    <li><a href="../admissions/fe.html">Admissions</a></li>
-    <li><a href="../tpo.html">Placements</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-</div>
 
+  <div class="premium-container">
+    <nav class="navbar-main">
+      <a href="index.html" class="brand-wrapper">
+        <img src="assets/images/logo/mcoerc.png" alt="MCOERC">
+        <div class="brand-text">
+          <h1>Matoshri College of Engineering</h1>
+          <p>An Autonomous Institute · Nashik</p>
+        </div>
+      </a>
+      
+      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li>
+          <a href="about.html">About <i class="fa fa-chevron-down" style="font-size:0.65em; margin-left:4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="about.html">About Institute</a>
+            <a href="vision.html">Vision & Mission</a>
+            <a href="secretary.html">Secretary's Desk</a>
+            <a href="principal.html">Director's Desk</a>
+            <a href="gb.html">Governing Body</a>
+            <a href="council.html">Academic Council</a>
+            <a href="governance.html">Governance</a>
+          </div>
+        </li>
+        <li>
+          <a href="academics/computer.html">Academics <i class="fa fa-chevron-down" style="font-size:0.65em; margin-left:4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="academics/computer.html">Computer Engineering</a>
+            <a href="academics/it.html">Information Technology</a>
+            <a href="academics/electronics.html">Electronics & TC Engg.</a>
+            <a href="academics/mechanical.html">Mechanical Engineering</a>
+            <a href="academics/civil.html">Civil Engineering</a>
+            <a href="academics/electrical.html">Electrical Engineering</a>
+            <a href="academics/aids.html">AI & Data Science</a>
+            <a href="academics/mca.html">MCA</a>
+          </div>
+        </li>
+        <li>
+          <a href="admissions/fe.html">Admissions <i class="fa fa-chevron-down" style="font-size:0.65em; margin-left:4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="admissions/fe.html">First Year UG (B.Tech)</a>
+            <a href="admissions/dsy.html">Direct Second Year</a>
+            <a href="admissions/me.html">M.Tech / MCA PG</a>
+            <a href="admissions/phd.html">Ph.D</a>
+          </div>
+        </li>
+        <li><a href="admin.html">Administration</a></li>
+        <li><a href="tpo.html">Placements</a></li>
+      </ul>
+      <a href="admissions/fe.html" class="btn-premium btn-accent">Apply Now <i class="fa fa-arrow-right"></i></a>
+    </nav>
+  </div>
+</header>
 <!-- END HEADER -->
 
 <div class="modal fade" id="admission-enquiry-popup" tabindex="-1" role="dialog"
@@ -544,38 +581,77 @@
 	<!-- END SECTION FEATURE -->
 </div>
 <!-- START FOOTER SECTION -->
-<!---/Location Map  -->
-<div class="gmap-locaton section-h-space">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div id="headingMap">
-					<a href="https://goo.gl/maps/114jeH7pV9u8o6sd9" target="_blank" title="Click to open a map"
-					   class="btn-map-marker">
-						<img src="assets/images/icons/icons8-google-maps-48.png"/>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!---/Location Map EOC -->
-<footer class="pds-footer"><div class="pds-container">
-  <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;">
-    <div><div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem;">
-      <img src="../assets/images/logo/mcoerc.png" width="48" height="48" alt="MCOERC" style="border-radius:8px;">
-      <span style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--clr-gold);">MCOERC</span>
+<footer class="premium-footer">
+  <div class="premium-container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="assets/images/logo/mcoerc.png" width="60" style="border-radius:12px;" alt="MCOERC">
+          <h2 style="color:#fff; margin:0; font-size:1.8rem;">MCOERC</h2>
+        </div>
+        <p>Matoshri College of Engineering & Research Centre, Nashik — An Autonomous Institute committed to technical excellence and moral values since 2008.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Institute</a></li>
+          <li><a href="vision.html">Vision & Mission</a></li>
+          <li><a href="admin.html">Administration</a></li>
+          <li><a href="tpo.html">Training & Placement</a></li>
+          <li><a href="alumni.html">Alumni Network</a></li>
+          <li><a href="disclosure.html">Mandatory Disclosure</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Academics</h4>
+        <ul class="footer-links">
+          <li><a href="academics/computer.html">Computer Science</a></li>
+          <li><a href="academics/it.html">Information Tech</a></li>
+          <li><a href="academics/aids.html">AI & Data Science</a></li>
+          <li><a href="academics/mechanical.html">Mechanical Engg</a></li>
+          <li><a href="academics/civil.html">Civil Engineering</a></li>
+          <li><a href="academics/mca.html">MCA Programme</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-list">
+          <div style="display:flex; gap:10px;">
+            <i class="fa fa-map-marker-alt" style="margin-top:5px;"></i>
+            <span>Eklahare, Near Odhagaon, Nashik – 422 003, Maharashtra</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <i class="fa fa-phone"></i>
+            <span>+91 253 230 2000</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <i class="fa fa-envelope"></i>
+            <span>info@mcoerc.ac.in</span>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <i class="fa fa-globe"></i>
+            <a href="https://www.mcoerc.ac.in" style="color:var(--clr-accent);">www.mcoerc.ac.in</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <p style="color:var(--clr-text-muted);font-size:0.875rem;line-height:1.7;">Matoshri College of Engineering &amp; Research Centre, Eklahare, Nashik &mdash; Autonomous Institute since 2008.</p>
-    <div class="footer-social"><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></div>
   </div>
-  <div><div class="footer-col-title">Quick Links</div><ul class="footer-links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../tpo.html">Placements</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
-  <div><div class="footer-col-title">Contact</div><div class="contact-item"><i class="fa fa-phone"></i><span>+91 253 230 2000</span></div><div class="contact-item"><i class="fa fa-envelope"></i><span>info@mcoerc.ac.in</span></div></div>
+  <div class="footer-bottom">
+    <div class="premium-container">
+      &copy; 2025 Matoshri College of Engineering & Research Centre. All rights reserved.
+    </div>
   </div>
-  <div class="footer-bottom"><p>&copy; 2025 MCOERC. All rights reserved.</p><p>An Autonomous Institute &mdash; Nashik</p></div>
-</div></footer>
-<div id="scrollToTop"><i class="fa fa-chevron-up"></i></div>
-
+</footer>
 <!-- END FOOTER SECTION -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
