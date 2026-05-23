@@ -545,7 +545,9 @@
 
     function animateStats() {
       if (hasCounted) return;
-      const rect = document.querySelector('.stats-bar').getBoundingClientRect();
+      const statsGrid = document.querySelector('.stats-grid');
+      if (!statsGrid) return;
+      const rect = statsGrid.getBoundingClientRect();
       if(rect.top < window.innerHeight - 100) {
         hasCounted = true;
         stats.forEach(stat => {
@@ -556,7 +558,7 @@
           const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
-              stat.innerText = target + (target > 200 ? '+' : (target == 92 ? '%' : ''));
+              stat.innerText = target + (target > 100 ? (target === 2008 ? '' : '+') : (target == 92 ? '%' : ''));
               clearInterval(timer);
             } else {
               stat.innerText = Math.ceil(current);
@@ -567,6 +569,94 @@
     }
     window.addEventListener('scroll', animateStats);
     animateStats(); // In case it's in view on load
+
+    // Glowing Gold Scroll Progress Indicator
+    const progressContainer = document.createElement('div');
+    progressContainer.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:4px; z-index:9999; pointer-events:none; background:transparent;';
+    const progressBar = document.createElement('div');
+    progressBar.style.cssText = 'width:0%; height:100%; background:linear-gradient(to right, var(--clr-accent), #fde047); box-shadow:0 0 8px var(--clr-accent-glow); transition:width 0.1s ease-out;';
+    progressContainer.appendChild(progressBar);
+    document.body.appendChild(progressContainer);
+
+    window.addEventListener('scroll', () => {
+      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+
+    // ── SUPREME UI/UX FEATURE 1: Canvas Golden Particles in Hero ──
+    const canvas = document.createElement('canvas');
+    canvas.id = 'hero-canvas';
+    canvas.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1; opacity:0.55;';
+    const hero = document.querySelector('.hero-section');
+    if (hero) {
+      hero.style.position = 'relative';
+      hero.appendChild(canvas);
+      const ctx = canvas.getContext('2d');
+      let width = canvas.width = hero.offsetWidth;
+      let height = canvas.height = hero.offsetHeight;
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = hero.offsetWidth;
+        height = canvas.height = hero.offsetHeight;
+      });
+
+      const particles = [];
+      const particleCount = 45;
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          r: Math.random() * 2 + 1,
+          vy: -(Math.random() * 0.35 + 0.1),
+          vx: Math.random() * 0.2 - 0.1
+        });
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = 'rgba(234, 179, 8, 0.35)';
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fill();
+
+          p.y += p.vy;
+          p.x += p.vx;
+
+          if (p.y < 0) {
+            p.y = height;
+            p.x = Math.random() * width;
+          }
+          if (p.x < 0 || p.x > width) {
+            p.vx = -p.vx;
+          }
+        });
+        requestAnimationFrame(drawParticles);
+      }
+      drawParticles();
+    }
+
+    // ── SUPREME UI/UX FEATURE 2: Radial Mouse-Follow Glass Aura Glows ──
+    const cards = document.querySelectorAll('.glass-card, .premium-card');
+    cards.forEach(card => {
+      card.style.position = 'relative';
+      card.style.overflow = 'hidden';
+      
+      const aura = document.createElement('div');
+      aura.className = 'glass-aura';
+      aura.style.cssText = 'position:absolute; width:180px; height:180px; background:radial-gradient(circle, rgba(234,179,8,0.1) 0%, transparent 70%); border-radius:50%; pointer-events:none; opacity:0; transition:opacity 0.3s ease; transform:translate(-50%, -50%); z-index:0;';
+      card.appendChild(aura);
+
+      card.addEventListener('mouseenter', () => aura.style.opacity = '1');
+      card.addEventListener('mouseleave', () => aura.style.opacity = '0');
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        aura.style.left = x + 'px';
+        aura.style.top = y + 'px';
+      });
+    });
   });
 </script>
 
