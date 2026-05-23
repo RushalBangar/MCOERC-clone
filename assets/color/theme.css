@@ -1,4 +1,19 @@
+/* =========================================================================
+   MCOERC Modernized Color & Theme Styling
+   Maps all legacy class selectors to the new Slate-Navy & Gold Design System
+   ========================================================================= */
 
+:root {
+  --theme-primary: var(--clr-primary, #0f172a);
+  --theme-primary-light: var(--clr-primary-light, #1e293b);
+  --theme-accent: var(--clr-accent, #eab308);
+  --theme-accent-glow: var(--clr-accent-glow, rgba(234, 179, 8, 0.4));
+  --theme-text: var(--clr-text, #334155);
+  --theme-text-muted: var(--clr-text-muted, #64748b);
+  --theme-border: var(--clr-border, #e2e8f0);
+}
+
+/* --- Color Variables Mapping (Primary Blue replacement with Slate-Navy) --- */
 a:hover,
 .hover_menu_style1 .navbar-expand-lg .navbar-nav > li:hover > a,
 .hover_menu_style1 .navbar-expand-lg .navbar-nav > li > a.active,
@@ -77,31 +92,33 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .icon_box_style_16 .box_icon i,
 .widget_links_style4 li a:hover,
 .event_info li i,
-.author_info span {
-    color: #2C5477;
+.author_info span,
+.author_info span a {
+    color: var(--theme-primary) !important;
 }
 
+/* Active tab coloring on hover */
 .tab-style4.tab_white .nav-tabs li.nav-item a:hover,
-.tab-style4.tab_white .nav-tabs li.nav-item a.active{
-	background-color:#2C5477;
-	color:#fff;
+.tab-style4.tab_white .nav-tabs li.nav-item a.active {
+    background-color: var(--theme-primary);
+    color: #fff;
 }
 
-.tab-style4.tab_white .nav-tabs li.nav-item a.active{
-	border-bottom-color: #2C5477;
+.tab-style4.tab_white .nav-tabs li.nav-item a.active {
+    border-bottom-color: var(--theme-primary);
 }
 
-
-.top-header.light_skin .list_menu li a:hover{
-    color: rgba(18,14,48,0.89);
+.top-header.light_skin .list_menu li a:hover {
+    color: var(--theme-primary-light);
 }
 
 .btn-default.btn-aylen:hover,
 .blog_heading *:hover,
 .blog_postmeta a:hover {
-    color: #2C5477 !important;
+    color: var(--theme-primary) !important;
 }
 
+/* Background Color mappings */
 .btn-default,
 .cart_buttons .view-cart,
 .cart_buttons .checkout,
@@ -184,28 +201,32 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .room_services i:hover,
 .widget_reservation h5,
 .widget_search_box .btn, .widget_search_box button {
-    background-color: #2C5477;
+    background-color: var(--theme-primary) !important;
 }
 
-.tab-style10 .nav-tabs .nav-item a.active h6{
-	color: #fff;!important;
+.tab-style10 .nav-tabs .nav-item a.active h6 {
+    color: #fff !important;
 }
 
 .owl-theme.yellow-tab .owl-dots .owl-dot.active span,
-.owl-theme.yellow-tab .owl-dots .owl-dot:hover span{
-	background-color: #2C5477;
-	border-color: #2C5477;
+.owl-theme.yellow-tab .owl-dots .owl-dot:hover span {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
 }
 
-.heading_s1.black_underline::before{
+.heading_s1.black_underline::before {
     background-color: #343a40;
 }
 
+/* Button & interactive hover states mapping to Metallic Gold */
 .btn-default:hover,
 .cart_buttons .view-cart:hover,
-.cart_buttons .checkout:hover {
-    background-color: #FF9747;
-	border-color: #FF9747;
+.cart_buttons .checkout:hover,
+.btn-pink:hover {
+    background-color: var(--theme-accent) !important;
+    border-color: var(--theme-accent) !important;
+    color: var(--theme-primary) !important;
+    box-shadow: 0 10px 20px -5px var(--theme-accent-glow);
 }
 
 .hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav li a.active,
@@ -213,6 +234,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
     background-color: transparent;
 }
 
+/* Border color mapping */
 .btn-default,
 .btn-outline-default,
 .filter_tab1 li a.current,
@@ -249,25 +271,21 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .dw_event_schedule a:hover,
 .pagination_style8 .page-item.active .page-link,
 .pagination_style8 .page-item .page-link:hover {
-    border-color: #2C5477;
+    border-color: var(--theme-primary) !important;
 }
 
-
-.btn-pink{
-	background-color: #FF9747;
-	border-color: #FF9747;
-}
-
-.btn-pink:hover{
-	background-color: #2C5477;
-	border-color: #2C5477;
-	color: #fff;
+/* Button pink maps to Gold */
+.btn-pink {
+    background-color: var(--theme-accent) !important;
+    border-color: var(--theme-accent) !important;
+    color: var(--theme-primary) !important;
 }
 
 .btn-default:hover {
-    border-color: #FF9747;
+    border-color: var(--theme-accent) !important;
 }
 
+/* Modern Semi-Transparent Overlays */
 .portfolio_style1 .portfolio_item::before,
 .portfolio_style2 .portfolio_content,
 .portfolio_style3 .portfolio_content,
@@ -275,21 +293,21 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .portfolio_style5 .portfolio_content,
 .instafeed li a::before,
 .bg_blue_transparent {
-    background-color: rgba(14, 147, 216, 0.80);
+    background-color: rgba(15, 23, 42, 0.85) !important;
 }
 
 .post_date::before,
 .cl_price::before,
 .event_date:after {
-    border-color: transparent #1083c8 transparent transparent;
+    border-color: transparent var(--theme-primary) transparent transparent;
 }
 
 .tab-style4 .nav-tabs {
-    border-color: #dddddd;
+    border-color: var(--theme-border);
 }
 
 .text_default {
-    color: #2C5477 !important
+    color: var(--theme-primary) !important;
 }
 
 .filter_tab1 li a.current, .filter_tab1 li a:hover,
@@ -298,169 +316,76 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .filter_tab4 li a.current, .filter_tab4 li a:hover,
 .filter_tab5 li a.current, .filter_tab5 li a:hover,
 .filter_tab6 li a.current, .filter_tab6 li a:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 .custome_select::before {
-    border-top-color: #2C5477;
+    border-top-color: var(--theme-primary);
 }
 
-.classis_box:hover:before {
-    background: -moz-linear-gradient(90deg, rgba(14, 147, 216, 1) 0%, rgba(255, 255, 255, 0.06) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.06)), color-stop(100%, rgba(14, 147, 216, 1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(90deg, rgba(14, 147, 216, 1) 0%, rgba(255, 255, 255, 0.06) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(90deg, rgba(14, 147, 216, 1) 0%, rgba(255, 255, 255, 0.06) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(90deg, rgba(14, 147, 216, 1) 0%, rgba(255, 255, 255, 0.06) 100%); /* ie10+ */
-    background: linear-gradient(0deg, rgba(14, 147, 216, 1) 0%, rgba(255, 255, 255, 0.06) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#2C5477', GradientType=0); /* ie6-9 */
-}
-
+/* Standardizing custom shadows */
 .filter_tab li a.active {
-    box-shadow: 0 0 5px #2C5477;
-    border-radius: 5%;
-    color: #fff;
+    box-shadow: 0 4px 12px var(--theme-accent-glow) !important;
+    border-radius: var(--radius-sm, 8px);
+    color: var(--theme-primary) !important;
+    background: var(--theme-accent) !important;
+    border-color: var(--theme-accent) !important;
 }
-
-
 
 .btn_box_shadow:hover,
 .btn_box_shadow:focus,
 .btn_box_shadow.active:focus,
 .btn_box_shadow:active:focus {
-    box-shadow: 0 0 15px #2C5477 !important;
+    box-shadow: 0 4px 15px var(--theme-accent-glow) !important;
 }
-
-
-.btn_box_shadow1:hover,
-.btn_box_shadow1:focus,
-.btn_box_shadow1.active:focus,
-.btn_box_shadow1:active:focus {
-    box-shadow: 0 0 15px rgba(0,0,0, 0.2) !important;
-}
-
-
-
 
 .tab-style7 li a.active::before {
-    border-color: #2C5477 transparent transparent transparent
+    border-color: var(--theme-primary) transparent transparent transparent;
 }
 
-
-.filter_nav {
-    float: right;
-    z-index: 9;
-}
-
-@media only screen and (max-width: 767px) {
-    .filter_nav .navbar-toggler {
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-    }
-
-    .filter_nav .navbar-collapse {
-        position: absolute;
-        right: 0;
-        top: 100%;
-        min-width: 10rem;
-        margin-top: 20px;
-        background-color: #fff;
-        padding: 10px;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    }
-}
-
-
-
-.event_schedule .author {
-    float: left;
-    margin-right: 20px;
-}
-.event_schedule .author img {
-    border-radius: 100%;
-}
-.schedule_info {
-    overflow: hidden;
-}
 .event_schedule {
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    padding: 20px;
+    box-shadow: var(--shadow-md, 0 10px 15px -3px rgba(0,0,0,0.05)) !important;
+    padding: 24px;
     margin-bottom: 30px;
-    border: 2px solid rgba(0,0,0,0.2);
+    border: 1px solid var(--theme-border) !important;
+    border-radius: var(--radius-md, 16px);
+    background: #fff;
 }
-.schedule_info ul {
-    margin-bottom: 7px;
-}
-.schedule_info ul li {
-    display: inline-block;
-    padding-right: 10px;
-    list-style: none;
-}
-.author_info,
-.schedule_info .date {
-    color: #292b2c;
-}
-.author_info span {
-    color: #0E93D8;
-}
-.schedule_desc {
-    margin-bottom: 15px;
-}
-.event_wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-direction:column-reverse;
-    flex-direction: column-reverse;
-}
+
 .dw_event_schedule a {
     text-align: center;
-    padding: 20px;
-    border: 2px solid #E8E8E8;
+    padding: 24px;
+    border: 1px solid var(--theme-border);
+    border-radius: var(--radius-md, 16px);
     margin-top: 15px;
     display: block;
-}
-.dw_event_schedule a:hover {
-    border-color: #0E93D8;
-}
-.dw_event_schedule i {
-    font-size: 100px;
-    display: block;
-}
-.dw_event_schedule span {
-    margin-top: 5px;
-    display: block;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.box_icon.white i {
-    color: #fff;
-    border-color: #fff;
+.dw_event_schedule a:hover {
+    border-color: var(--theme-accent) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px var(--theme-accent-glow);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color:#fff;
-    background: #2C5477;
-}
-.nav-pills .nav-link:hover{
-     color:#fff;
-     background: #2C5477;
- }
-
-.tab-style9.modified{
-    transition: all ease 1s;
+    color: #fff;
+    background: var(--theme-primary);
 }
 
+.nav-pills .nav-link:hover {
+    color: #fff;
+    background: var(--theme-primary-light);
+}
 
 .tab-style9.modified .nav-item a:hover {
-
-    color: #2C5477;
+    color: var(--theme-primary);
     background-color: transparent;
 }
 
-.tab-style9.modified .nav-item a.active{
-    color: #2C5477;
+.tab-style9.modified .nav-item a.active {
+    color: var(--theme-primary);
     background-color: transparent;
-    border-bottom: 2px solid #8f989e;
+    border-bottom: 2px solid var(--theme-primary);
     border-radius: 0;
 }
