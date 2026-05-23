@@ -689,3 +689,78 @@ textarea.form-control {
 .animate-fade-up {
   animation: premiumFadeUp 0.8s var(--motion-ease) forwards !important;
 }
+
+/* --- Premium Cinematic Overrides & Mobile Responsiveness --- */
+.hero-section {
+  background-image: url('../images/about/about1.jpg') !important; /* Switch to clean, high-res campus building photo (no baked-in text!) */
+}
+
+.hero-overlay {
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.92) 100%) !important;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 5vw, 5rem) !important;
+  line-height: 1.15 !important;
+}
+
+/* Responsive Action Bar & Typography */
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 130px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 110px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.8rem, 4.5vw, 3rem) !important;
+  }
+  
+  .hero-badge {
+    font-size: 0.65rem !important;
+    padding: 4px 12px !important;
+    margin-bottom: 1.25rem !important;
+  }
+  
+  /* Quick Action Bar transformed into a clean vertical stack on Mobile */
+  .hero-section .glass-panel {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1.2rem !important;
+    padding: 1.25rem 2rem !important;
+    border-radius: var(--radius-md) !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  
+  .hero-section .glass-panel a {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    font-size: 0.95rem !important;
+    padding: 0.25rem 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  /* Zig-Zag Storytelling Columns stack nicely on mobile */
+  .premium-section > .premium-container > div[style*="display: grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  
+  .premium-section > .premium-container > div[style*="display: grid"] > div[style*="order"] {
+    order: unset !important;
+  }
+  
+  /* 3-Column Notice Grid stacks nicely on mobile */
+  .premium-section > .premium-container > div[style*="grid-template-columns:repeat(3, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
