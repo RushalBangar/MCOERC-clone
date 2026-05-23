@@ -159,7 +159,7 @@ a:hover {
   gap: 12px;
 }
 .brand-wrapper img { height: 55px; border-radius: 12px; box-shadow: var(--shadow-sm); }
-.brand-text h1 { font-size: 1.4rem; margin: 0; color: var(--clr-primary); line-height: 1.1; }
+.brand-text h1, .brand-text .brand-title { font-size: 1.4rem; margin: 0; color: var(--clr-primary); line-height: 1.1; font-weight: 800; font-family: var(--font-heading); display: block; letter-spacing: -0.02em; }
 .brand-text p { font-size: 0.75rem; margin: 0; color: var(--clr-text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
 
 .nav-links { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; align-items: center; }
@@ -389,7 +389,7 @@ a:hover {
   .stats-grid, .gallery-grid { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; width: 100%; }
   .hero-cta .btn-premium { width: 100%; }
-  .brand-text h1 { font-size: 1.15rem; }
+  .brand-text h1, .brand-text .brand-title { font-size: 1.15rem; }
   .brand-text p { font-size: 0.65rem; }
   .brand-wrapper img { height: 45px; }
 }

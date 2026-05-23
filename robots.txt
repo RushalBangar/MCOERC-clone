@@ -1,0 +1,6 @@
+# robots.txt for Matoshri College of Engineering & Research Centre (MCOERC)
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.mcoerc.ac.in/sitemap.xml
